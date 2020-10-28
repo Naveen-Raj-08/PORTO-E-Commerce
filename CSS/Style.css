@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home {
+  width: 100%;
+  height: 1200px;
+}
+.navbar {
+  background-color: rgb(68, 59, 59);
+}
+.navbar > .container > .collapse > .nav > li > a {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: Secular One;
+  text-transform: uppercase;
+  margin: 6px 5px;
+  padding: 10px 10px;
+}
+.navbar > .container > .collapse > .nav > li > a:hover {
+  background-color: rgb(41, 34, 34);
+}
+.container > #myCarousel {
+  margin-top: 7rem;
+}
