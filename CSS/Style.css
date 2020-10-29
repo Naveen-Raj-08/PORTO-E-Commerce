@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +12,10 @@
   height: 1200px;
 }
 .navbar {
-  background-color: rgb(68, 59, 59);
+  background-color: rgb(85, 78, 78);
+}
+.navbar > .container > .nav-header > a {
+  margin: 2px 0;
 }
 .navbar > .container > .collapse > .nav > li > a {
   color: white;
@@ -24,4 +31,209 @@
 }
 .container > #myCarousel {
   margin-top: 7rem;
+}
+
+.navbar > .container > .collapse > .notification {
+  color: white;
+  text-decoration: none;
+  margin: 1rem 12rem;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+}
+.navbar > .container > .collapse > .notification:hover,
+:focus {
+  color: white;
+}
+.navbar > .container > .collapse > .notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 10px;
+  padding: 5px 5px;
+  background-color: tomato;
+  color: white;
+  height: 20px;
+  text-align: center;
+  width: auto;
+}
+
+.home > .container > .OurService {
+  padding: 2rem 0rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Oxygen;
+}
+.home > .container > .OurService > .shipping {
+  display: flex;
+  justify-content: space-around;
+  text-emphasis: uppercase;
+}
+.home > .container > .OurService > .shipping > i {
+  padding-top: 10px;
+  margin-right: 1.5rem;
+  color: rgb(100, 97, 97);
+}
+.home > .container > .OurService > .shipping > div > h5 {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.home > .container > .OurService > .shipping > div > h6 {
+  font-size: 12px;
+  color: rgb(163, 163, 163);
+}
+.home > .container > .OurService > .Guarenty {
+  display: flex;
+  justify-content: space-between;
+}
+.home > .container > .OurService > .Guarenty > i {
+  padding-top: 10px;
+  margin-right: 1.5rem;
+  color: rgb(100, 97, 97);
+}
+.home > .container > .OurService > .Guarenty > div > h5 {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.home > .container > .OurService > .Guarenty > div > h6 {
+  font-size: 12px;
+  color: rgb(124, 116, 116);
+}
+.home > .container > .OurService > .Support {
+  display: flex;
+}
+
+.home > .container > .OurService > .Support > i {
+  padding-top: 10px;
+  margin-right: 1.5rem;
+  color: rgb(100, 97, 97);
+}
+.home > .container > .OurService > .Support > div > h5 {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.home > .container > .OurService > .Support > div > h6 {
+  font-size: 12px;
+  color: rgb(124, 116, 116);
+}
+.home > .HL {
+  width: 100%;
+  border-bottom: 0.5px solid rgb(209, 204, 204);
+}
+#container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#container > .shop-categories {
+  padding: 10px 10px;
+  text-align: center;
+  font-family: Oswald;
+  background-color: whitesmoke;
+}
+#container > .shop-categories > h4 {
+  padding: 10px 10px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: black;
+}
+#container > .shop-categories > h4 > i {
+  padding: 2px 8px;
+  text-align: center;
+}
+#container > .shop-categories > ul > li {
+  list-style: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Quicksand;
+  padding: 10px 10px;
+  text-align: left;
+  margin: 0px 0px;
+}
+#container > .shop-categories > ul > li > a {
+  color: rgb(49, 49, 49);
+  margin: 5px 30px;
+  padding: 20px 10px;
+  text-align: left;
+}
+#container > .shop-categories > ul > li > a:hover,
+:active,
+:focus {
+  text-decoration: none;
+}
+#container > .shop-categories > ul > li > i {
+  padding: 5px 5px;
+  margin: 2px 20px;
+  text-align: center;
+}
+#container > .shop-categories > ul > li > .slow {
+  display: none;
+  font-size: 15px;
+  padding: 5px 5px;
+  text-align: center;
+}
+#container > .shop-categories > ul > li > .slow > p {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+#container > .shop-categories > ul > li > .slow > p > a {
+  color: rgb(49, 49, 49);
+}
+#container > .shop-categories > ul > li > i {
+  margin: 5px 0px;
+  text-align: end;
+}
+#container > .shop-categories > ul > li > .slow > .Mens {
+  display: none;
+  padding: 10px 10px;
+  font-size: 12px;
+  text-align: center;
+}
+#container > .shop-categories > ul > li > .slow > .Womens {
+  display: none;
+  padding: 10px 10px;
+  font-size: 12px;
+  text-align: center;
+}
+#container > .shop-categories > ul > li > .slow > a:hover {
+  text-decoration: none;
+}
+#container > .shop-categories > ul > li > .slow > p > a:hover {
+  text-decoration: none;
+}
+#container > .featured-products {
+  padding: 10px 10px;
+}
+
+@media screen and (orientation: portrait) {
+  .home > .container > .OurService {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .home > .container > .OurService > .shipping {
+    padding: 10px 10px;
+  }
+  .home > .container > .OurService > .Guarenty {
+    padding: 10px 20px;
+  }
+  .home > .container > .OurService > .Support {
+    padding: 10px 10px;
+  }
 }
