@@ -7,6 +7,7 @@
 
         <!--JQuery Plugin-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
         <!--Carousel Plugin-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -17,10 +18,13 @@
         <link href='https://fonts.googleapis.com/css?family=Secular One' rel='stylesheet' />
       
         <!--Fontawesome icons plugin-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
         <!--External Stylesheet-->
         <link rel="stylesheet" href="./CSS/Style.css" />
+
+        <!--External Javascript-->
         <script src="./JavaScript/index.js"></script>
 </head>
 <body>
@@ -137,23 +141,19 @@
                 <ul>
                     <li>
                         <a href="#">Fashion</a><i id="toggle-btn" class="fa fa-plus"></i>
-                                        <div style=" border-bottom: 0.5px solid rgb(209, 204, 204);"></div>
                         <div class="slow">
                             <p>
                                 <a href="#">Mens</a><i id="toggle-mens" class="fa fa-plus" style="font-size: 10px;"></i>
                             </p>
-                                        <div style=" border-bottom: 0.5px solid rgb(209, 204, 204);"></div>
                                 <div class="Mens">
                                     <p>Welcome</p>
-                                    <div style=" border-bottom: 0.5px solid rgb(209, 204, 204);"></div>
                                 </div>
                             <p>
                                <a href="#">Women</a><i id="toggle-womens" class="fa fa-plus" style="font-size: 10px;"></i>
                             </p>
-                                        <div style=" border-bottom: 0.5px solid rgb(209, 204, 204);"></div>
+
                             <div class="Womens">
                                 <p>Womens Collections</p>
-                                        <div style=" border-bottom: 0.5px solid rgb(209, 204, 204);"></div>
                             </div>
                             <p>
                                <a href="#">Kids</a><i class="fa fa-plus" style="font-size: 10px;"></i>
@@ -161,15 +161,197 @@
                        </div>
                     </li>
                     <li><a href="">Electronics</a></li>
-                                        <div style=" border-bottom: 0.5px solid rgb(209, 204, 204);"></div>
                     <li><a href="">Mobile</a></li>
-                                        <div style=" border-bottom: 0.5px solid rgb(209, 204, 204);"></div>
                 </ul>
+                <div class="Service">
+                    <div class="Service-title">
+                        <i class="far fa-star" style='font-size:24px'></i>
+                        <h4>Dedicated Service</h4>
+                    </div>
+                    <div class="Service-msg">
+                        <p>We really care about you and your website as much as you do Purchasing</p>
+                    </div>
+                </div>
+                <div class="policy">
+                    <div class="policy-title">
+                        <i class='fas fa-reply' style='font-size:24px'></i>
+                        <h4>Free Returns</h4>
+                    </div>
+                    <div class="policy-msg">
+                        <p>We really care about you and your website as much as you do Purchasing</p>
+                    </div>
+                </div>
             </div>
             <div class="featured-products">
-                <h2>
-                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores perferendis nemo numquam. Quisquam, temporibus aliquam praesentium laboriosam nulla cupiditate consectetur corrupti ratione, voluptatibus perferendis, nihil eaque deleniti! Consequuntur, voluptate molestiae.
-                </h2>
+                <div class="heading">
+                    <h4>Featured Products</h4>
+                    <div id="HR"></div>
+                </div> 
+                <div class="product-items">
+                    <div class="card" id="item-1">
+                        <img src="./Images/product-01.jpg" style="width: 200px;" alt="model" />
+                        <div class="overlay">QuickView</div>
+                        <p>
+                            <a href="#">Women Black Top</a>
+                            <span class="rating">
+                                <i class="fa fa-star" style="font-size: x-small;"></i> 
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                            </span>
+                            <span id="price">$90.00</span>
+                        </p>
+                        <div class="group-btn">
+                            <button id="cart01"><i class='far fa-heart'></i></button>
+                            <button class="btn">Add to Cart</button>
+                            <button id="cart01"><i class='fas fa-signal'></i></button>    
+                        </div>
+                    </div>
+                    <div class="card" id="item-2">
+                        <img src="./Images/product-02.jpg" style="width: 200px;" alt="model" />
+                        <div class="overlay-02">QuickView</div>
+                        <p>
+                            <a href="#">Women Black Top</a>
+                            <span class="rating">
+                                <i class="fa fa-star" style="font-size: x-small;"></i> 
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                            </span>
+                            <span id="price">$90.00</span>
+                        </p>
+                        <div class="group-btn">
+                            <button id="cart02"><i class='far fa-heart'></i></button>
+                            <button class="btn">Add to Cart</button>
+                            <button id="cart02"><i class='fas fa-signal'></i></button>    
+                        </div>
+                    </div>
+                    <div class="card" id="item-3">
+                        <img src="./Images/product-03.jpg" style="width: 200px;" alt="model" />
+                        <div class="overlay-03">QuickView</div>
+                        <p>
+                            <a href="#">Women Black Top</a>
+                            <span class="rating">
+                                <i class="fa fa-star" style="font-size: x-small;"></i> 
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                            </span>
+                            <span id="price">$90.00</span>
+                        </p>
+                        <div class="group-btn">
+                            <button id="cart03"><i class='far fa-heart'></i></button>
+                            <button class="btn">Add to Cart</button>
+                            <button id="cart03"><i class='fas fa-signal'></i></button>    
+                        </div>
+                    </div>
+                    <div class="card" id="item-4">
+                        <img src="./Images/product-04.jpg" style="width: 200px;" alt="model" />
+                        <div class="overlay-04">QuickView</div>
+                        <p>
+                            <a href="#">Women Black Top</a>
+                            <span class="rating">
+                                <i class="fa fa-star" style="font-size: x-small;"></i> 
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                            </span>
+                            <span id="price">$90.00</span>
+                        </p>
+                        <div class="group-btn">
+                            <button id="cart04"><i class='far fa-heart'></i></button>
+                            <button class="btn">Add to Cart</button>
+                            <button id="cart04"><i class='fas fa-signal'></i></button>    
+                        </div>
+                    </div>
+                    <div class="card" id="item-5">
+                        <img src="./Images/product-05.jpg"style="width: 200px;" alt="model" />
+                        <div class="overlay-05">QuickView</div>
+                        <p>
+                            <a href="#">Women Black Top</a>
+                            <span class="rating">
+                                <i class="fa fa-star" style="font-size: x-small;"></i> 
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                            </span>
+                            <span id="price">$90.00</span>
+                        </p>
+                        <div class="group-btn">
+                            <button id="cart05"><i class='far fa-heart'></i></button>
+                            <button class="btn">Add to Cart</button>
+                            <button id="cart05"><i class='fas fa-signal'></i></button>    
+                        </div>
+                    </div>
+                    <div class="card" id="item-6">
+                        <img src="./Images/product-06.jpg" style="width: 200px;" alt="model" />
+                        <div class="overlay-06">QuickView</div>
+                        <p>
+                            <a href="#">Women Black Top</a>
+                            <span class="rating">
+                                <i class="fa fa-star" style="font-size: x-small;"></i> 
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                            </span>
+                            <span id="price">$90.00</span>
+                        </p>
+                        <div class="group-btn">
+                            <button id="cart06"><i class='far fa-heart'></i></button>
+                            <button class="btn">Add to Cart</button>
+                            <button id="cart06"><i class='fas fa-signal'></i></button>    
+                        </div>
+                    </div>
+                    <div class="card" id="item-7">
+                        <img src="./Images/product-07.jpg" style="width: 200px;" alt="model" />
+                        <div class="overlay-07">QuickView</div>
+                        <p>
+                            <a href="#">Women Black Top</a>
+                            <span class="rating">
+                                <i class="fa fa-star" style="font-size: x-small;"></i> 
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                            </span>
+                            <span id="price">$90.00</span>
+                        </p>
+                        <div class="group-btn">
+                            <button id="cart07"><i class='far fa-heart'></i></button>
+                            <button class="btn">Add to Cart</button>
+                            <button id="cart07"><i class='fas fa-signal'></i></button>    
+                        </div>
+                    </div>
+                    <div class="card" id="item-8">
+                        <div class="imgOverlay">
+                            <img src="./Images/product-08.jpg" style="width: 200px;" alt="model" />
+                            <div class="overlay-08">QuickView</div>
+                        </div>
+                        
+                        <p>
+                            <a href="#">Women Black Top</a>
+                            <span class="rating">
+                                <i class="fa fa-star" style="font-size: x-small;"></i> 
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                                <i class="fa fa-star" style="font-size: x-small;"></i>
+                            </span>
+                            <span id="price">$90.00</span>
+                        </p>
+                        <div class="group-btn">
+                            <button id="cart08"><i class='far fa-heart'></i></button>
+                            <button class="btn">Add to Cart</button>
+                            <button id="cart08"><i class='fas fa-signal'></i></button>    
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
