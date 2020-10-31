@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $("#toggle-btn").click(function(){
         $("div.slow").slideToggle()
@@ -37,7 +38,6 @@ $(document).ready(function(){
 })
 
 
-
 $(document).ready(function(){
     $('#item-3').mouseenter(function(){
         $('button#cart03').toggle('fast')
@@ -69,7 +69,6 @@ $(document).ready(function(){
 })
 
 
-
 $(document).ready(function(){
     $('#item-6').mouseenter(function(){
         $('button#cart06').toggle('fast')
@@ -79,8 +78,6 @@ $(document).ready(function(){
     })  
 })
 
-
-
 $(document).ready(function(){
     $('#item-7').mouseenter(function(){
         $('button#cart07').toggle('fast')
@@ -89,8 +86,6 @@ $(document).ready(function(){
         $('button#cart07').toggle('fast')
     })  
 })
-
-
 
 $(document).ready(function(){
     $('#item-8').mouseenter(function(){
