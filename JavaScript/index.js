@@ -95,3 +95,48 @@ $(document).ready(function(){
         $('button#cart08').toggle('fast')
     })  
 })
+
+    var owl = $('#carousel');
+        owl.owlCarousel({
+        autoplay: true,
+        loop: true,
+        margin: 20,
+        responsive:{
+        0:{
+        items:2
+        },
+        600:{
+        items:3
+        },            
+        960:{
+        items:5
+        },
+        1200:{
+        items:6
+        }
+        }
+        });
+
+    $(document).ready(function(){
+        $('#carousel2').owlCarousel(
+            {
+            loop: false,
+            margin: 20,
+            dots: true,
+            responsive:{
+                0:{
+                items:2
+                },
+                600:{
+                items:3
+                },            
+                960:{
+                items:5
+                },
+                1200:{
+                items:6
+                }
+                }
+            }
+        )
+    })
