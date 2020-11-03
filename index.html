@@ -75,50 +75,43 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li><a href="#">Home</a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                  >Categories <span class="caret"></span
-                ></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">VARIATION 1</a></li>
-                  <li><a href="#">VARIATION 2</a></li>
-                  <li><a href="#">GENERAL</a></li>
+              <li>
+                <a href="#">Categories ▾</a>
+                <ul class="dropdown">
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Cloths</a></li>
+                  <li><a href="#">Furniture</a></li>
                 </ul>
               </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                  >Products <span class="caret"></span
-                ></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">VARIATION 1</a></li>
-                  <li><a href="#">VARIATION 2</a></li>
-                  <li><a href="#">PRODUCTS LAYOUT</a></li>
+              <li>
+                <a href="#">Products ▾</a>
+                <ul class="dropdown">
+                  <li><a href="#">Laptops</a></li>
+                  <li><a href="#">Monitors</a></li>
+                  <li><a href="#">Printers</a></li>
                 </ul>
               </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                  >Pages <span class="caret"></span
-                ></a>
-                <ul class="dropdown-menu">
+              <li>
+                <a href="#">Pages ▾</a>
+                <ul class="dropdown">
                   <li><a href="#">Page 1</a></li>
                   <li><a href="#">Page 2</a></li>
                   <li><a href="#">Page 3</a></li>
                 </ul>
               </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                  >Features <span class="caret"></span
-                ></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">HEADER TYPES</a></li>
-                  <li><a href="#">FOOTER TYPES</a></li>
+              <li>
+                <a href="#">Features ▾</a>
+                <ul class="dropdown">
+                  <li><a href="#">Mobile Responsive</a></li>
+                  <li><a href="#">Bootstraped</a></li>
+                  <li><a href="#">Fast Load</a></li>
                 </ul>
               </li>
               <li><a href="#">Spacial Offer</a></li>
               <li><a href="#">Buy Porto!</a></li>
             </ul>
             <a href="#" class="notification">
-              <i class="fas fa-shopping-bag" style="font-size: 25px"></i>
+              <i class="fa fa-shopping-bag" style="font-size: 25px"></i>
               <span class="badge badge-pill badge-danger">0</span>
             </a>
           </div>
@@ -201,35 +194,31 @@
           <h4><i class="fa fa-bars"></i>Shop Categories</h4>
           <ul>
             <li>
-              <a href="#">Fashion</a><i id="toggle-btn" class="fa fa-plus"></i>
-              <div class="slow">
-                <p>
+              <a class="collapsed card-link card-header">Fashion </a>
+              <i id="toggle-btn" class="fa fa-plus float-right"></i>
+              <div class="slow" id="toggleCollapse">
+                <p id="Mens-part">
                   <a href="#">Mens</a
                   ><i
                     id="toggle-mens"
                     class="fa fa-plus"
                     style="font-size: 10px"
                   ></i>
+                  <div class="Mens">
+                    <p>Welcome</p>
+                  </div>
                 </p>
-                <div class="Mens">
-                  <p>Welcome</p>
-                </div>
-                <p>
+                <p id="Womens-part"> 
                   <a href="#">Women</a
                   ><i
                     id="toggle-womens"
                     class="fa fa-plus"
                     style="font-size: 10px"
                   ></i>
-                </p>
-
-                <div class="Womens">
-                  <p>Womens Collections</p>
-                </div>
-                <p>
-                  <a href="#">Kids</a
-                  ><i class="fa fa-plus" style="font-size: 10px"></i>
-                </p>
+                  <div class="Womens">
+                    <p>Womens Collections</p>
+                  </div>
+                </p>                
               </div>
             </li>
             <li><a href="">Electronics</a></li>
@@ -286,7 +275,7 @@
               </p>
               <div class="group-btn">
                 <button id="cart01"><i class="far fa-heart"></i></button>
-                <button class="btn">Add to Cart</button>
+                <button class="btn"><i class="fa fa-shopping-bag" style="font-size: small;"></i>Add to Cart</button>
                 <button id="cart01"><i class="fas fa-signal"></i></button>
               </div>
             </div>
@@ -310,7 +299,7 @@
               </p>
               <div class="group-btn">
                 <button id="cart02"><i class="far fa-heart"></i></button>
-                <button class="btn">Add to Cart</button>
+                <button class="btn"><i class="fa fa-shopping-bag" style="font-size: small;"></i>Add to Cart</button>
                 <button id="cart02"><i class="fas fa-signal"></i></button>
               </div>
             </div>
@@ -334,7 +323,7 @@
               </p>
               <div class="group-btn">
                 <button id="cart03"><i class="far fa-heart"></i></button>
-                <button class="btn">Add to Cart</button>
+                <button class="btn"><i class="fa fa-shopping-bag" style="font-size: small;"></i>Add to Cart</button>
                 <button id="cart03"><i class="fas fa-signal"></i></button>
               </div>
             </div>
@@ -358,7 +347,7 @@
               </p>
               <div class="group-btn">
                 <button id="cart04"><i class="far fa-heart"></i></button>
-                <button class="btn">Add to Cart</button>
+                <button class="btn"><i class="fa fa-shopping-bag" style="font-size: small;"></i>Add to Cart</button>
                 <button id="cart04"><i class="fas fa-signal"></i></button>
               </div>
             </div>
@@ -382,7 +371,7 @@
               </p>
               <div class="group-btn">
                 <button id="cart05"><i class="far fa-heart"></i></button>
-                <button class="btn">Add to Cart</button>
+                <button class="btn"><i class="fa fa-shopping-bag" style="font-size: small;"></i>Add to Cart</button>
                 <button id="cart05"><i class="fas fa-signal"></i></button>
               </div>
             </div>
@@ -406,7 +395,7 @@
               </p>
               <div class="group-btn">
                 <button id="cart06"><i class="far fa-heart"></i></button>
-                <button class="btn">Add to Cart</button>
+                <button class="btn"><i class="fa fa-shopping-bag" style="font-size: small;"></i>Add to Cart</button>
                 <button id="cart06"><i class="fas fa-signal"></i></button>
               </div>
             </div>
@@ -430,7 +419,7 @@
               </p>
               <div class="group-btn">
                 <button id="cart07"><i class="far fa-heart"></i></button>
-                <button class="btn">Add to Cart</button>
+                <button class="btn"><i class="fa fa-shopping-bag" style="font-size: small;"></i>Add to Cart</button>
                 <button id="cart07"><i class="fas fa-signal"></i></button>
               </div>
             </div>
@@ -457,7 +446,7 @@
               </p>
               <div class="group-btn">
                 <button id="cart08"><i class="far fa-heart"></i></button>
-                <button class="btn">Add to Cart</button>
+                <button class="btn"><i class="fa fa-shopping-bag" style="font-size: small;"></i>Add to Cart</button>
                 <button id="cart08"><i class="fas fa-signal"></i></button>
               </div>
             </div>
@@ -480,9 +469,358 @@
           <h4>New Arrivals</h4>
           <div class="HR"></div>
         </div>
+        <div class="owl-carousel owl-theme container" id="carousel2">
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New01.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Sports Set</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New02.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Golf Set</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New03.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Cell Phone</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New04.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Luggage Bag</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New05.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >White Luggage</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New06.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Sunglass</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New07.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Backpack</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New08.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Women Bag</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New09.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Fashion Bag</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New10.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Sports Cap</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New11.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >Hand Bag</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              color: rgb(88, 88, 88);
+              font-family: Poppins;
+            "
+          >
+            <img src="./Images/New12.jpg" />
+            <a
+              href="#"
+              style="
+                color: rgb(34, 34, 34);
+                font-size: 16px;
+                font-family: Poppins;
+              "
+              >White Hand Bag</a
+            >
+            <p style="text-align: center">
+              <span style="color: rgb(179, 179, 179)">
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </span>
+              <br />
+              <span style="font-family: Oswald; font-size: 18px">$90.00</span>
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="owl-carousel container" id="carousel2"></div>
-      <div class="footer container-fluid">
+      <div class="footer">
         <div class="container">
           <div class="footer-body">
             <div class="body">
@@ -516,7 +854,7 @@
               <div class="product1">
                 <img
                   src="./Images/product-01.jpg"
-                  width="100"
+                  width="95"
                   height="auto"
                   alt="product"
                 />
@@ -535,7 +873,7 @@
               <div class="product2">
                 <img
                   src="./Images/product-02.jpg"
-                  width="100"
+                  width="95"
                   height="auto"
                   alt="product"
                 />
@@ -548,15 +886,14 @@
                     <i class="fa fa-star" style="font-size: x-small"></i>
                     <i class="fa fa-star" style="font-size: x-small"></i>
                   </span>
-                  <span>$100.00</span>
+                  <span id="offer">$100.00</span>
+                  <span>$50.00</span>
                 </p>
               </div>
             </div>
             <div class="Follow">
               <h5>Follow Us</h5>
-              <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-              <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
-              <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+              <a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> 
             </div>
           </div>
           <div class="HR"></div>
@@ -581,10 +918,15 @@
                 <a href="#">1st Fully working Ajax Theme</a>
                 <a href="#">20 Unique Homepage Layouts</a>
               </div>
-              <div>
+              <div id="sec">
                 <a href="#">Powerful Admin Panel</a>
                 <a href="#">Mobile & Retina Optimized</a>
               </div>
+            </div>
+            <div class="social">
+              <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
             </div>
           </div>
           <div class="HR"></div>
@@ -594,10 +936,12 @@
             </div>
             <div class="subscribe">
               <h5>NewsLetter</h5>
-              <input type="search" required />
-              <button>Subscribe</button>
+              <div>
+                <input type="search" required />
+                <button>Subscribe</button>
+              </div>
             </div>
-            <div>
+            <div id="payment">
               <img src="./Images/Payment.png" />
             </div>
           </div>
@@ -615,5 +959,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./JavaScript/index.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
