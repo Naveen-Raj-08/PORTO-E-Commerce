@@ -4,10 +4,453 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
+    <!--JQuery Plugin-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
+    />
+
+    <!--Owl Carousel-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
+    <!--Carousel Plugin-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Secular One"
+      rel="stylesheet"
+    />
+
+    <!--Fontawesome icons plugin-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="./CSS/product.css" />
+    <script src="./JavaScript/jquery.zoom.js"></script>
   </head>
   <body>
-    <div>
-      <h1>Welcome from Product Page</h1>
+    <div class="main">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"
+              ><img src="./Images/Logo2.png" style="height: 25px"
+            /></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li>
+                <a href="#">Categories ▾</a>
+                <ul class="dropdown">
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Cloths</a></li>
+                  <li><a href="#">Furniture</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Products ▾</a>
+                <ul class="dropdown">
+                  <li><a href="#">Laptops</a></li>
+                  <li><a href="#">Monitors</a></li>
+                  <li><a href="#">Printers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Pages ▾</a>
+                <ul class="dropdown">
+                  <li><a href="#">Page 1</a></li>
+                  <li><a href="#">Page 2</a></li>
+                  <li><a href="#">Page 3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Features ▾</a>
+                <ul class="dropdown">
+                  <li><a href="#">Mobile Responsive</a></li>
+                  <li><a href="#">Bootstraped</a></li>
+                  <li><a href="#">Fast Load</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Spacial Offer</a></li>
+              <li><a href="#">Buy Porto!</a></li>
+            </ul>
+            <a href="#" class="notification">
+              <i class="fa fa-shopping-bag" style="font-size: 25px"></i>
+              <span class="badge badge-pill badge-danger">0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="Product container">
+        <div class="product-details">
+          <div class="product-zoom">
+            <span class='zoom' id='ex1'> <img src='./Images/Product-1.jpg' id='jack' width='400' height='520' alt='Daisy on the Ohoopee'/>
+          </div>
+          <div class="product-spec">
+            <div class="product-title">
+              <h4>Fashion Bag</h4>
+              <div>
+                <a href="#"
+                  ><i class="fas fa-angle-left" style="font-size: 24px"></i
+                ></a>
+                <a href="#"
+                  ><i class="fas fa-angle-right" style="font-size: 24px"></i
+                ></a>
+              </div>
+            </div>
+            <div class="rating">
+              <div>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+                <i class="fa fa-star" style="font-size: x-small"></i>
+              </div>
+              <div class="review">
+                <a href="#">Be the first review to this Product</a>
+              </div>
+            </div>
+            <div class="product-message">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eligendi, quam sequi eum architecto molestiae deserunt est dicta
+              </p>
+            </div>
+            <div class="HR"></div>
+            <div class="price">
+              <h5>$75.00</h5>
+              <span>
+                Availability: In stock<br />
+                SKUFashion Bag
+              </span>
+            </div>
+            <div class="HR"></div>
+            <div class="btn-group">
+              <div>
+                <button class="btn">-</button>
+                <input type="text" value="1" />
+                <button class="btn">+</button>
+              </div>
+              <div class="cart-btn">
+                <button><i class="fa fa-shopping-bag"></i>Add to cart</button>
+              </div>
+            </div>
+            <div class="HR"></div>
+            <div class="likes">
+              <button class="btn"><i class="far fa-heart"></i></button>
+              <button class="btn"><i class="fa fa-signal"></i></button>
+            </div>
+            <div></div>
+          </div>
+          <div class="ourService">
+            <div class="shipping">
+              <i class="fas fa-truck" style="font-size: 30px"></i>
+              <h4>Free Shipping</h4>
+            </div>
+            <div class="HR"></div>
+            <div class="shipping">
+              <i class="fa fa-dollar" style="font-size: 30px"></i>
+              <h4>100% money<br />Back Guaranty</h4>
+            </div>
+            <div class="HR"></div>
+            <div class="shipping">
+              <i class="fa fa-phone" style="font-size: 30px"></i>
+              <h4>
+                Online<br />
+                Support 24/7
+              </h4>
+            </div>
+            <div>
+              <img src="./Images/Advertisement.jpg" alt="ads" />
+            </div>
+          </div>
+        </div>
+        <div class="tabs">
+          <button onclick="openCity('Details')">Details</button>
+          <button onclick="openCity('Review')">Review</button>
+          <button onclick="openCity('Custom-tab')">Custom Tab</button>
+        </div>
+
+        <div id="Details" class="product_details">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore <br />magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex<br />
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat.<br />
+          </p>
+          <ul>
+            <li>
+              <i class="fa fa-check"></i>Any Product types that You want -
+              Simple, Configurable
+            </li>
+            <li>
+              <i class="fa fa-check"></i>Any Product types that You want -
+              Simple, Configurable
+            </li>
+            <li>
+              <i class="fa fa-check"></i>Any Product types that You want -
+              Simple, Configurable
+            </li>
+          </ul>
+          <p>
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div id="Review" class="product_details" style="display: none">
+          <h4>YOU'RE REVIEWING:</h4>
+          <h5>FASHION BAG</h5>
+          <p>
+            Your Rating <span>*</span><br />
+            Rating<br />
+            <span class="rating">
+              <i class="far fa-star" style="font-size: xx-large"></i>
+              <i class="far fa-star" style="font-size: xx-large"></i>
+              <i class="far fa-star" style="font-size: xx-large"></i>
+              <i class="far fa-star" style="font-size: xx-large"></i>
+              <i class="far fa-star" style="font-size: xx-large"></i>
+            </span>
+          </p>
+          <form>
+            <h6 id="label">Nickname <span>*</span></h6>
+
+            <input type="text" id="Username" /><br />
+            <h6 id="label">Summary <span>*</span></h6>
+
+            <input type="text" id="summary" /><br />
+            <h6 id="label">Review <span>*</span></h6>
+            <textarea></textarea>
+            <br />
+            <button class="btn">Submit Review</button>
+          </form>
+        </div>
+
+        <div id="Custom-tab" class="product_details" style="display: none">
+          <table>
+            <tr>
+              <th>Clothing - Single Size Conversion (Continued)</th>
+            </tr>
+            <tr>
+              <td>UK</td>
+              <td>18</td>
+              <td>20</td>
+              <td>22</td>
+              <td>24</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <td>Europian</td>
+              <td>18</td>
+              <td>20</td>
+              <td>22</td>
+              <td>24</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <td>US</td>
+              <td>18</td>
+              <td>20</td>
+              <td>22</td>
+              <td>24</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <td>Australia</td>
+              <td>18</td>
+              <td>20</td>
+              <td>22</td>
+              <td>24</td>
+              <td>26</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-body">
+            <div class="body">
+              <h5>About us</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                tristique<br />
+                augue eget enim feugiat blandit. Phasellus bibendum ex leo,
+                at<br />
+                egestas lacus pellentesque in x leo, at egestas lacus.
+              </p>
+              <div class="contact">
+                <div>
+                  <h5>Contact Info</h5>
+                  <h6>Address</h6>
+                  <span>
+                    123 Street Name, City,<br />
+                    England, Pintrest street oklar
+                  </span>
+                </div>
+                <div>
+                  <h6>Phone</h6>
+                  <span>(123) 456-7890</span>
+                  <h6>Email</h6>
+                  <a href="mailto:someone@example.com">yourstyleporto.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="featured-product">
+              <h5>Featured Products</h5>
+              <div class="product1">
+                <img
+                  src="./Images/product-01.jpg"
+                  width="95"
+                  height="auto"
+                  alt="product"
+                />
+                <p>
+                  <a href="#">Women Black Top</a>
+                  <span class="rating">
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                  </span>
+                  <span>$90.00</span>
+                </p>
+              </div>
+              <div class="product2">
+                <img
+                  src="./Images/product-02.jpg"
+                  width="95"
+                  height="auto"
+                  alt="product"
+                />
+                <p>
+                  <a href="#">Women Black Top</a>
+                  <span class="rating">
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                  </span>
+                  <span id="offer">$100.00</span>
+                  <span>$50.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="Follow">
+              <h5>Follow Us</h5>
+              <a
+                class="twitter-timeline"
+                data-width="300"
+                data-height="200"
+                data-dnt="true"
+                data-theme="dark"
+                href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw"
+                >Tweets by TwitterDev</a
+              >
+            </div>
+          </div>
+          <div class="HR"></div>
+          <div class="footer-bottom">
+            <div class="Account">
+              <div>
+                <h5>My Account</h5>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <a href="#">My Account</a>
+              </div>
+              <div class="sec">
+                <a href="#">Order History</a>
+                <a href="#">Advanced Search</a>
+                <a href="#">Login</a>
+              </div>
+            </div>
+            <div class="feature">
+              <div>
+                <h5>Main Features</h5>
+                <a href="#">Super Fast Magento Theme</a>
+                <a href="#">1st Fully working Ajax Theme</a>
+                <a href="#">20 Unique Homepage Layouts</a>
+              </div>
+              <div id="sec">
+                <a href="#">Powerful Admin Panel</a>
+                <a href="#">Mobile & Retina Optimized</a>
+              </div>
+            </div>
+            <div class="social">
+              <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="HR"></div>
+          <div id="footer">
+            <div>
+              <p>&copy; Porto eCommerce. 2020. All Rights Reserved</p>
+            </div>
+            <div class="subscribe">
+              <h5>NewsLetter</h5>
+              <div>
+                <input type="search" required />
+                <button>Subscribe</button>
+              </div>
+            </div>
+            <div id="payment">
+              <img src="./Images/Payment.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!--External JavaScript-->
+    <script src="./JavaScript/index.js"></script>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <script>
+       $(document).ready(function () {
+        $("#ex1").zoom();
+      });
+    </script>
   </body>
 </html>
