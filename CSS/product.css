@@ -1,0 +1,836 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+}
+.navbar {
+  background-color: rgb(85, 78, 78);
+}
+.navbar > .container > .nav-header > a {
+  margin: 2px 0;
+}
+.navbar > .container > .collapse > .nav > li > a {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: Secular One;
+  text-transform: uppercase;
+  margin: 6px 5px;
+  padding: 10px 10px;
+}
+.navbar > .container > .collapse > .nav > li > a:hover {
+  background-color: rgb(41, 34, 34);
+}
+.container > #myCarousel {
+  margin-top: 7rem;
+}
+ul > li > ul > li > a {
+  color: rgb(41, 34, 34);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+ul > li > ul > li > a:hover {
+  text-decoration: none;
+  color: gray;
+}
+ul > li > ul > li > a:focus,
+:active {
+  color: gray;
+  text-decoration: none;
+}
+ul li ul.dropdown {
+  min-width: 100%;
+  background: white;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  font-family: Oxygen;
+  padding: 10px 10px;
+}
+ul li:hover ul.dropdown {
+  display: block;
+}
+ul li ul.dropdown li {
+  display: block;
+}
+.navbar > .container > .collapse > .notification {
+  color: white;
+  text-decoration: none;
+  padding-top: 10px;
+  float: right;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+}
+.navbar > .container > .collapse > .notification:hover,
+:focus,
+:active {
+  color: white;
+}
+.navbar > .container > .collapse > .notification .badge {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  font-size: 10px;
+  padding: 5px 5px;
+  background-color: tomato;
+  color: white;
+  height: 20px;
+  text-align: center;
+  width: auto;
+}
+
+.main > .Product {
+  margin-top: 70px;
+  height: auto;
+}
+.main > .Product > .product-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main > .Product > .product-details > .product-spec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+.main > .Product > .product-details > .product-spec > .product-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main > .Product > .product-details > .product-spec > .product-title > h4 {
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+}
+.main > .Product > .product-details > .product-spec > .product-title > div {
+  float: right;
+}
+.main > .Product > .product-details > .product-spec > .product-title > div > a {
+  color: rgb(100, 100, 100);
+}
+.main > .Product > .product-details > .product-spec > .rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main > .Product > .product-details > .product-spec > .rating > div {
+  padding-right: 7px;
+}
+.main > .Product > .product-details > .product-spec > .rating > div > i {
+  padding: 10px 0px;
+  color: rgb(155, 155, 155);
+}
+.main > .Product > .product-details > .product-spec > .rating > .review {
+  border-left: 2px solid rgb(177, 177, 177);
+
+  padding: 5px 10px;
+  margin-right: 30px;
+  text-align: center;
+}
+.main > .Product > .product-details > .product-spec > .rating > .review > a {
+  color: rgb(173, 173, 173);
+}
+.main > .Product > .product-details > .product-spec > .product-message > p {
+  color: rgb(156, 156, 156);
+  font-family: Open Sans;
+  font-size: 14px;
+  padding: 20px 0px;
+  line-height: 25px;
+}
+.main > .Product > .product-details > .product-spec > .HR {
+  width: 100%;
+  height: 0.5px;
+  background-color: rgb(216, 216, 216);
+}
+.main > .Product > .product-details > .product-spec > .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  width: 100%;
+}
+.main > .Product > .product-details > .product-spec > .price > h5 {
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(71, 62, 62);
+}
+.main > .Product > .product-details > .product-spec > .price > span {
+  font-size: 14px;
+  color: rgb(92, 92, 92);
+}
+.main > .Product > .product-details > .product-spec > .btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 0px 30px 0px;
+}
+.main > .Product > .product-details > .product-spec > .btn-group > div > input {
+  width: 30px;
+  color: black;
+  text-align: center;
+  padding: 6px 5px;
+  border: none;
+}
+.main
+  > .Product
+  > .product-details
+  > .product-spec
+  > .btn-group
+  > div
+  > input:focus,
+:active {
+  background: transparent;
+  outline: none;
+}
+.main > .Product > .product-details > .product-spec > .btn-group > div {
+  color: rgb(201, 201, 201);
+  padding: 10px 5;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 0px;
+}
+.main > .Product > .product-details > .product-spec > .btn-group > div > .btn {
+  background-color: transparent;
+  border-radius: 0px;
+  border-left: 1px solid rgb(201, 201, 201);
+  border-right: 1px solid rgb(201, 201, 201);
+  font-size: 18px;
+  font-weight: bold;
+}
+.main > .Product > .product-details > .product-spec > .btn-group > .cart-btn {
+  margin: 0px 10px;
+  border: none;
+}
+.main
+  > .Product
+  > .product-details
+  > .product-spec
+  > .btn-group
+  > .cart-btn
+  > button {
+  color: white;
+  padding: 10px 10px;
+  margin: 0px 10px;
+  border: 1px solid gray;
+  text-transform: uppercase;
+  font-family: Oswald;
+  background-color: #544e4e;
+}
+.main
+  > .Product
+  > .product-details
+  > .product-spec
+  > .btn-group
+  > .cart-btn
+  > button:focus,
+:active {
+  outline: none;
+}
+.main
+  > .Product
+  > .product-details
+  > .product-spec
+  > .btn-group
+  > .cart-btn
+  > button
+  > i {
+  font-size: 13px;
+  text-align: center;
+  padding-right: 10px;
+}
+.main
+  > .Product
+  > .product-details
+  > .product-spec
+  > .btn-group
+  > div
+  > .btn:focus,
+:active {
+  outline: none;
+}
+.main > .Product > .product-details > .product-spec > .likes {
+  padding: 30px 0px 0px 0px;
+}
+.main > .Product > .product-details > .product-spec > .likes > .btn {
+  padding: 10px 15px;
+  background: transparent;
+  border-radius: 0px;
+  border: 0.5px solid rgb(61, 61, 61);
+  margin-right: 5px;
+}
+.main > .Product > .product-details > .product-spec > .likes > .btn:focus,
+:active {
+  outline: none;
+}
+.main > .Product > .product-details > .product-spec > .likes > .btn > i {
+  font-size: 18px;
+  color: #544e4e;
+}
+.main > .Product > .product-details > .product-zoom {
+  border: 0.7px solid rgb(128, 128, 128);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main > .Product > .product-details > .product-zoom > img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.main > .Product > .product-details > .product-spec {
+  padding: 20px 5px 5px 20px;
+}
+.main > .Product > .product-details > .ourService {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  float: right;
+}
+.main > .Product > .product-details > .ourService > .shipping {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.main > .Product > .product-details > .ourService > .shipping > i {
+  padding: 20px 10px;
+  color: rgb(156, 156, 156);
+  text-align: left;
+}
+.main > .Product > .product-details > .ourService > .shipping > h4 {
+  font-size: 14px;
+  font-family: Open Sans;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  color: rgb(77, 76, 76);
+  float: right;
+  margin-right: 10px;
+}
+.main > .Product > .product-details > .ourService > .HR {
+  width: 100%;
+  height: 0.5px;
+  background-color: rgb(216, 216, 216);
+}
+.main > .Product > .tabs {
+  padding-top: 40px;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(128, 128, 128);
+}
+.main > .Product > .tabs > button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+  margin-right: 40px;
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: Secular One;
+}
+.main > .Product > .tabs > button:focus,
+:active > .tabs {
+  color: black;
+  border: none;
+  border-left: none;
+  outline: none;
+  border-bottom: 3px solid rgb(43, 42, 42);
+}
+.main > .Product > #Details {
+  padding: 40px 0px;
+  font-family: Open Sans;
+}
+
+.main > .Product > #Details > p {
+  color: rgb(70, 70, 70);
+}
+.main > .Product > #Details > ul {
+  font-size: small;
+  margin-left: 50px;
+  line-height: 35px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.main > .Product > #Details > ul > li {
+  list-style: none;
+  color: #544e4e;
+}
+.main > .Product > #Details > ul > li > i {
+  margin-right: 5px;
+}
+.main > .Product > #Review {
+  padding: 40px 0px;
+}
+.main > .Product > #Review > h4 {
+  font-size: 18px;
+  color: #544e4e;
+}
+.main > .Product > #Review > h5 {
+  font-size: 16px;
+  color: #544e4e;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.main > .Product > #Review > p {
+  padding: 10px 0px;
+  color: #544e4e;
+  line-height: 30px;
+}
+.main > .Product > #Review > p > span {
+  color: red;
+  font-size: small;
+}
+.main > .Product > #Review > p > .rating > i {
+  color: #5a5a5a;
+}
+.main > .Product > #Review > form {
+  padding-top: 10px;
+}
+.main > .Product > #Review > form > #label {
+  color: #3b3939;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-family: Oxygen;
+  padding: 8px 0px;
+}
+.main > .Product > #Review > form > input {
+  padding: 5px 10px;
+  width: 500px;
+  color: black;
+}
+.main > .Product > #Review > form > h6 > span {
+  color: red;
+  font-size: small;
+}
+.main > .Product > #Review > form > textarea {
+  width: 500px;
+  padding: 20px 20px;
+  color: #3b3939;
+}
+.main > .Product > #Review > form > textarea:focus,
+:active {
+  outline: none;
+}
+.main > .Product > #Review > form > input:focus,
+:active {
+  outline: none;
+}
+.main > .Product > #Review > form > button {
+  border: none;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px 10px;
+  color: white;
+  font-family: Oswald;
+  border-radius: 0px;
+  text-transform: uppercase;
+  background-color: #3b3939;
+}
+.main > .Product > #Review > form > button:focus,
+:active {
+  outline: none;
+}
+
+table {
+  margin: 50px 0px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+}
+tr > th {
+  color: #7c7c7c;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-family: Oxygen;
+  font-weight: 600;
+}
+td {
+  text-align: left;
+  padding: 15px 10px;
+  color: #bbbbbb;
+  border-top: 0.5px solid #d3d3d3;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+  width: 100%;
+}
+
+.footer > .container > .footer-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer > .container > .footer-body > .body > p {
+  color: rgb(175, 175, 175);
+  font-family: Poppins;
+  font-size: small;
+  line-height: 25px;
+}
+.footer > .container > .footer-body > .body > h5 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: white;
+}
+.footer > .container > .footer-body > .body > .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > .container > .footer-body > .body > .contact > div > h5 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: white;
+}
+.footer > .container > .footer-body > .body > .contact > div > h6 {
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-family: Poppins;
+  font-weight: 300;
+  color: white;
+}
+.footer > .container > .footer-body > .body > .contact > div > span {
+  color: rgb(175, 175, 175);
+  font-size: 13px;
+  font-family: Poppins;
+}
+.footer > .container > .footer-body > .body > .contact > div > a {
+  color: rgb(175, 175, 175);
+  font-size: 13px;
+}
+.footer > .container > .footer-body > .featured-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding-left: 40px;
+}
+
+.footer > .container > .footer-body > .featured-product > h5 {
+  margin-top: 60px;
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: white;
+}
+.footer > .container > .footer-body > .featured-product > .product1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer > .container > .footer-body > .featured-product > .product1 > p {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 20px;
+}
+.footer > .container > .footer-body > .featured-product > .product1 > p > a {
+  color: rgb(175, 175, 175);
+  font-family: Poppins;
+  font-size: small;
+}
+.footer
+  > .container
+  > .footer-body
+  > .featured-product
+  > .product1
+  > p
+  > a:hover {
+  text-decoration: none;
+}
+.footer > .container > .footer-body > .featured-product > .product1 > p > span {
+  color: rgb(131, 131, 131);
+  font-family: Oswald;
+}
+.footer > .container > .footer-body > .featured-product > .product1 > img {
+  cursor: pointer;
+}
+.footer > .container > .footer-body > .featured-product > .product2 > img {
+  cursor: pointer;
+}
+.footer > .container > .footer-body > .featured-product > .product2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer > .container > .footer-body > .featured-product > .product2 > p {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 20px;
+}
+.footer > .container > .footer-body > .featured-product > .product2 > p > a {
+  color: rgb(175, 175, 175);
+  font-family: Poppins;
+  font-size: small;
+}
+.footer
+  > .container
+  > .footer-body
+  > .featured-product
+  > .product2
+  > p
+  > a:hover {
+  text-decoration: none;
+}
+.footer
+  > .container
+  > .footer-body
+  > .featured-product
+  > .product2
+  > p
+  > span
+  > i {
+  color: rgb(184, 184, 184);
+}
+.footer
+  > .container
+  > .footer-body
+  > .featured-product
+  > .product1
+  > p
+  > span
+  > i {
+  color: rgb(184, 184, 184);
+}
+.footer > .container > .footer-body > .featured-product > .product2 > p > span {
+  color: rgb(131, 131, 131);
+  font-family: Oswald;
+  font-weight: 400;
+}
+.footer
+  > .container
+  > .footer-body
+  > .featured-product
+  > .product2
+  > p
+  > #offer {
+  text-decoration: line-through;
+}
+.footer > .container > .footer-body > .Follow {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  text-align: center;
+  height: 200px;
+}
+.footer > .container > .footer-body > .Follow > h5 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: white;
+}
+.footer > .container > .HR {
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgb(78, 78, 78);
+  height: 0.2px;
+}
+.footer > .container > .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.footer > .container > .footer-bottom > .Account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer > .container > .footer-bottom > .Account > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+  font-family: Poppins;
+}
+.footer > .container > .footer-bottom > .Account > div > a {
+  color: rgb(175, 175, 175);
+  padding-top: 6px;
+  font-size: small;
+}
+.footer > .container > .footer-bottom > .Account > .sec {
+  margin-top: 36px;
+  margin-left: 30px;
+}
+.footer > .container > .footer-bottom > .Account > div > h5 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: white;
+}
+.footer > .container > .footer-bottom > .feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer > .container > .footer-bottom > .feature > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer > .container > .footer-bottom > .feature > #sec {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.footer > .container > .footer-bottom > .feature > div > h5 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: white;
+}
+.footer > .container > .footer-bottom > .feature > div > a {
+  color: rgb(175, 175, 175);
+  padding-top: 6px;
+  font-size: small;
+  font-family: Poppins;
+}
+
+.footer > .container > .footer-bottom > .HR {
+  width: 100%;
+  margin: 10px 0px;
+  background-color: rgb(78, 78, 78);
+  height: 0.2px;
+}
+
+.footer > .container > .footer-bottom > .social {
+  text-align: center;
+  margin-top: 5rem;
+}
+.footer > .container > .footer-bottom > .social > a {
+  background-color: rgb(43, 40, 40);
+  padding: 15px 20px;
+  font-size: 20px;
+  color: white;
+}
+.footer > .container > #footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+}
+.footer > .container > #footer > div > p {
+  color: rgb(175, 175, 175);
+  padding-top: 6px;
+  font-size: small;
+  font-family: Poppins;
+}
+.footer > .container > #footer > .subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer > .container > #footer > .subscribe > h5 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 15 px;
+  padding-right: 15px;
+  color: white;
+}
+.footer > .container > #footer > .subscribe > div > input {
+  height: 35px;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  padding: 20px 20px;
+  color: black;
+  width: 200px;
+  letter-spacing: 1.5px;
+}
+.footer > .container > #footer > .subscribe > div > button {
+  float: right;
+  width: fit-content;
+  padding: 11px 20px;
+  background: rgb(77, 73, 73);
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  cursor: pointer;
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+.footer > .container > #footer > .subscribe > div > button:focus,
+:active {
+  outline: none;
+}
+.footer > .container > #footer > .subscribe > div > input:focus,
+:active {
+  outline: none;
+}
+
+.zoom {
+  display: inline-block;
+}
+.zoom:after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.zoom img {
+  display: block;
+}
+.zoom img::selection {
+  background-color: transparent;
+}
