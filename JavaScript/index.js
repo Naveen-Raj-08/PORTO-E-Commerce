@@ -88,6 +88,12 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("#colorChange").click(function () {
+    $("div.color").slideToggle();
+  });
+});
+
 var owl = $("#carousel");
 owl.owlCarousel({
   autoplay: true,
