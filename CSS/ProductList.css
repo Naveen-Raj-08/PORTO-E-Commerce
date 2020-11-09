@@ -212,17 +212,18 @@ ul li ul.dropdown li {
   color: black;
 }
 .main-content > div > .product-list {
-  width: 100%;
-  height: auto;
-}
-.main-content > div > .product-list {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 1fr);
   padding: 0px 10px;
-  grid-gap: 1rem;
+  text-align: center;
+  width: 100%;
 }
 .main-content > div > .product-list > .card {
-  width: auto;
+  margin: 10px 10px;
+  object-fit: cover;
+}
+.main-content > div > .product-list > .card > img {
+  width: 100%;
   height: auto;
 }
 .main-content > div > .product-list > .card > p {
@@ -236,12 +237,8 @@ ul li ul.dropdown li {
   font-size: 15px;
   font-family: Poppins;
 }
-.main-content > div > .product-list > .card > img {
-  width: 100%;
-  height: auto;
-}
 .main-content > div > .product-list > .card:hover > img {
-  box-shadow: 0px 0px 10px rgb(214, 214, 214);
+  box-shadow: 0px 15px 20px -13px gray;
 }
 .main-content > div > .product-list > .card > p > a {
   color: rgb(49, 49, 49);
@@ -795,9 +792,17 @@ ul li ul.dropdown li {
 :active {
   outline: none;
 }
-
+@media (max-width: 720px) {
+  .main-content > div > .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+}
 @media screen and (orientation: portrait) {
-  .main-content {
+  .main > .main-content {
     display: flex;
     flex-direction: column;
     padding-left: 0px;
@@ -808,15 +813,27 @@ ul li ul.dropdown li {
     flex-direction: column;
     width: 100%;
   }
+  .main-content > div > .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+
+  /* .main-content > div > .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    padding: 0px 10px;
+    text-align: center;
+  } */
   .main-content > .product-list > #item-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .main-content > .product-list > #item-1 > img {
-    width: 100%;
-    height: auto;
+    border: 1px solid black;
   }
   .main-content > .product-list > #item-1 > .product-details {
     display: flex;
@@ -885,6 +902,11 @@ ul li ul.dropdown li {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: left;
+  }
+  .footer > .container > .footer-bottom > .feature > #sec {
+    padding: 0;
+    margin: 0;
   }
   .footer > .container > #footer {
     display: flex;

@@ -673,7 +673,6 @@ ul li ul.dropdown li {
 :active {
   outline: none;
 }
-
 @media screen and (orientation: portrait) {
   .main-content {
     display: flex;
@@ -686,6 +685,26 @@ ul li ul.dropdown li {
     flex-direction: column;
     width: 100%;
   }
+  .main-content > div > .heading > .size > form > label {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .main-content > div > .heading > .size > form > select {
+    font-size: 10px;
+  }
+  .main-content > div > .heading > .sorting > form > label {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .main-content > div > .heading > .sorting > form > select {
+    font-size: 10px;
+  }
+  .main-content > div > .product-list {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    padding: 10px 0px;
+    margin: 0px 0;
+  }
   .main-content > div > .product-list > #item-1 {
     padding-left: 0px;
     padding-right: 0px;
@@ -693,12 +712,23 @@ ul li ul.dropdown li {
   .main-content > div > .product-list > #item-1 > img {
     width: 100%;
     height: auto;
+    padding: 0px 10px;
   }
   .main-content > div > .product-list > #item-1 > .product-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    text-align: left;
+    padding: 0;
+  }
+  .main-content
+    > div
+    > .product-list
+    > #item-1
+    > .product-details
+    > .group-btn
+    > .like {
     text-align: center;
   }
   .main-content > div > .product-list > #item-1 > .product-details > p {
@@ -765,6 +795,9 @@ ul li ul.dropdown li {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+  }
+  .footer > .container > .footer-bottom > .feature > #sec {
+    padding: 0;
   }
   .footer > .container > #footer {
     display: flex;
