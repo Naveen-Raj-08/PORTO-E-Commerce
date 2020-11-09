@@ -101,6 +101,10 @@ ul li ul.dropdown li {
   justify-content: space-between;
   align-items: flex-start;
 }
+.main > .Product > .product-details > .product-zoom > span > img {
+  max-width: 100%;
+  height: auto;
+}
 .main > .Product > .product-details > .product-spec {
   display: flex;
   flex-direction: column;
@@ -127,7 +131,39 @@ ul li ul.dropdown li {
 }
 .main > .Product > .product-details > .product-spec > .product-title > div > a {
   color: rgb(100, 100, 100);
+  margin: 0px 5px;
 }
+.main
+  > .Product
+  > .product-details
+  > .product-spec
+  > .product-title
+  > div
+  > a
+  > span {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px;
+  padding: 0px 2px;
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 5;
+  top: 120px;
+  margin-left: -60px;
+}
+.main
+  > .Product
+  > .product-details
+  > .product-spec
+  > .product-title
+  > div
+  > a:hover
+  > span {
+  visibility: visible;
+}
+
 .main > .Product > .product-details > .product-spec > .rating {
   display: flex;
   flex-direction: row;
@@ -290,9 +326,10 @@ ul li ul.dropdown li {
   color: #544e4e;
 }
 .main > .Product > .product-details > .product-zoom {
-  border: 0.7px solid rgb(128, 128, 128);
+  border: 0.7px solid rgb(202, 202, 202);
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 .main > .Product > .product-details > .product-zoom > img {
   margin-top: 40px;
@@ -405,7 +442,7 @@ ul li ul.dropdown li {
   font-size: small;
 }
 .main > .Product > #Review > p > .rating > i {
-  color: #5a5a5a;
+  color: #bdbdbd;
 }
 .main > .Product > #Review > form {
   padding-top: 10px;
@@ -833,4 +870,167 @@ td {
 }
 .zoom img::selection {
   background-color: transparent;
+}
+@media screen and (min-width: 700px) and (max-width: 980px) {
+  .main > .Product > .product-details > .ourService {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main > .Product > .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .main > .Product > .product-details > .product-zoom {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .main > .Product > .product-details > .product-zoom > span {
+    padding: 0;
+    margin: 0;
+  }
+  .main > .Product > .product-details > .product-zoom > span > img {
+    padding: 0px;
+    margin: 0px;
+  }
+  .main > .Product > .product-details > .product-spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .main
+    > .Product
+    > .product-details
+    > .product-spec
+    > .product-title
+    > div
+    > a
+    > span {
+    display: none;
+  }
+
+  .main > .Product > .product-details > .ourService {
+    display: none;
+  }
+  .main > .Product > .product-details > .product-spec > .rating {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .main > .Product > .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .main > .Product > .tabs > .product_details {
+    padding: 10px 10px;
+  }
+  .main > .Product > #Review > form > input {
+    width: 250px;
+  }
+  .main > .Product > #Review > form > textarea {
+    width: 250px;
+  }
+  .main > .Product > #Custom-tab > table > tr > th {
+    width: 100%;
+    border: 1px solid black;
+  }
+  .footer > .container > .footer-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .body > .contact > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .featured-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .Follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer > .container > .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .footer > .container > .footer-bottom > .Account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer > .container > .footer-bottom > .Account > .sec {
+    padding: 0px;
+    margin: 0px;
+  }
+  .footer > .container > .footer-bottom > .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer > .container > .footer-bottom > .feature > #sec {
+    padding: 0;
+    margin: 0;
+  }
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer > .container > #footer > .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer > .container > #footer > .subscribe > h5 {
+    text-align: left;
+  }
+  .footer > .container > #footer > #payment {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .footer > .container > .footer-bottom > .social {
+    margin-top: 20px;
+  }
 }
