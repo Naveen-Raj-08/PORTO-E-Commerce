@@ -921,9 +921,7 @@ td {
     display: none;
   }
   .main > .Product > .product-details > .product-spec > .rating {
-    text-align: center;
-    padding: 0;
-    margin: 0;
+    font-size: small;
   }
   .main > .Product > .tabs {
     display: grid;
