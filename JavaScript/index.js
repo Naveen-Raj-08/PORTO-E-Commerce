@@ -1,19 +1,5 @@
-$(document).ready(function () {
-  $("#toggle-btn").click(function () {
-    $("div.slow").slideToggle();
-  });
-});
-
-$(document).ready(function () {
-  $("#toggle-mens").click(function () {
-    $("div.Mens").slideToggle();
-  });
-});
-
-$(document).ready(function () {
-  $("#toggle-womens").click(function () {
-    $("div.Womens").slideToggle();
-  });
+$(".collection").click(function () {
+  $(this).find("i").toggleClass("fas fa-plus fas fa-minus");
 });
 
 $(document).ready(function () {
