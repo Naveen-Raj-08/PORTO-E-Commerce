@@ -404,26 +404,58 @@ ul li ul.dropdown li {
 .home > .main-content > .product_list > #item-1 {
   grid-area: item-1;
 }
+.home > .main-content > .product_list > #item-1 > img {
+  max-width: 100%;
+  height: auto;
+}
 .home > .main-content > .product_list > #item-2 {
   grid-area: item-2;
+}
+.home > .main-content > .product_list > #item-2 > img {
+  width: 100%;
+  height: auto;
 }
 .home > .main-content > .product_list > #item-3 {
   grid-area: item-3;
 }
+.home > .main-content > .product_list > #item-3 > img {
+  width: 100%;
+  height: auto;
+}
 .home > .main-content > .product_list > #item-4 {
   grid-area: item-4;
+}
+.home > .main-content > .product_list > #item-4 > img {
+  width: 100%;
+  height: auto;
 }
 .home > .main-content > .product_list > #item-5 {
   grid-area: item-5;
 }
+.home > .main-content > .product_list > #item-5 > img {
+  width: 100%;
+  height: auto;
+}
 .home > .main-content > .product_list > #item-6 {
   grid-area: item-6;
+}
+.home > .main-content > .product_list > #item-6 > img {
+  width: 100%;
+  height: auto;
 }
 .home > .main-content > .product_list > #item-7 {
   grid-area: item-7;
 }
+.home > .main-content > .product_list > #item-7 > img {
+  width: 100%;
+  height: auto;
+}
 .home > .main-content > .product_list > #item-8 {
   grid-area: item-8;
+}
+.home > .main-content > .product_list > #item-8 > img {
+  width: 100%;
+  height: auto;
 }
 .home > .main-content > .product_list > .card {
   padding: 0;
@@ -515,7 +547,6 @@ ul li ul.dropdown li {
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
-
   width: 40px;
 }
 .home > .main-content > .product_list > .card > .group-btn > #cart06 {
@@ -1198,6 +1229,8 @@ ul li ul.dropdown li {
 :active {
   outline: none;
 }
+
+/* Mobile Responsive Style */
 @media (max-width: 480px) {
   .home > .container > .OurService {
     display: flex;
@@ -1229,6 +1262,10 @@ ul li ul.dropdown li {
     align-items: center;
     margin: 0px;
     padding: 0px;
+  }
+  .home > .main-content > .product_list > #item-7 > img {
+    width: 150px;
+    height: 150px;
   }
   .home > .main-content > .product_list > .heading {
     display: flex;
@@ -1338,5 +1375,41 @@ ul li ul.dropdown li {
     margin-top: 20px;
   }
 }
+
+/* Mobile Landscape Responsive */
 @media screen and (max-width: 767px) {
+  .home > .container > .OurService {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .home > .container > .OurService > .shipping {
+    padding: 10px 10px;
+  }
+  .home > .container > .OurService > .Guarenty {
+    padding: 10px 20px;
+  }
+  .home > .container > .OurService > .Support {
+    padding: 10px 10px;
+  }
+  .home > .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "categories"
+      "product-list";
+    grid-gap: 1rem;
+  }
+  .home > .main-content > .product_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "heading heading"
+      "item-1 item-2"
+      "item-3 item-4"
+      "item-5 item-6"
+      "item-7 item-8";
+    text-align: center;
+  }
 }

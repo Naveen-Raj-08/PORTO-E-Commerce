@@ -96,15 +96,15 @@ ul li ul.dropdown li {
   padding-bottom: 10px;
   margin-top: 50px;
   margin-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "filter product_list";
+  grid-gap: 2rem;
 }
 .main-content > .filter {
   padding: 10px 10px;
   font-family: Poppins;
+  grid-area: filter;
 }
 .main-content > .filter > .HR {
   width: 100%;
@@ -121,7 +121,7 @@ ul li ul.dropdown li {
 }
 .main-content > .filter > div > ul {
   list-style: none;
-  padding: 40px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   width: 100%;
 }
 .main-content > .filter > div > ul > li {
@@ -145,81 +145,360 @@ ul li ul.dropdown li {
   float: right;
   color: rgb(68, 68, 68);
 }
-.main-content > .filter > div > ul > li > .slow {
-  padding: 25px 10px;
-  display: none;
+.main-content > .filter > div > ul > li > #collapseOne {
+  padding: 15px 5px;
 }
-
-.main-content > .filter > div > ul > li > .color {
-  padding: 25px 10px;
-  display: none;
+.main-content > .filter > div > ul > li > #collapseTwo {
+  padding: 15px 5px;
 }
-.main-content > .filter > div > ul > li > .color > p {
+.main-content > .filter > div > ul > li > #collapseTwo > p {
   color: black;
 }
 .main-content > div {
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
-.main-content > div > .heading {
+.main-content > .product_list > .heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: left;
   padding: 10px 0px;
   font-family: Oxygen;
+  grid-area: heading;
 }
-.main-content > div > .heading > .sorting > form > label {
+.main-content > .product_list > .heading > .sorting > form > label {
   font-weight: 100;
   font-size: 13px;
   color: black;
 }
-.main-content > div > .heading > .sorting > form > select {
+.main-content > .product_list > .heading > .sorting > form > select {
   padding: 5px 5px;
   font-size: 14px;
   color: black;
   border: 1px solid rgb(221, 221, 221);
 }
-.main-content > div > .heading > .sorting > form > select > option {
+.main-content > .product_list > .heading > .sorting > form > select > option {
   padding: 5px 5px;
   color: black;
 }
-.main-content > div > .heading > .sorting > form > a > i {
+.main-content > .product_list > .heading > .sorting > form > a > i {
   font-weight: bold;
   font-size: 15px;
   padding: 0px 7px;
   color: black;
 }
-.main-content > div > .heading > .size > form > label {
+.main-content > .product_list > .heading > .size > form > label {
   font-weight: 100;
   font-size: 13px;
   color: black;
 }
-.main-content > div > .heading > .size > form > select {
+.main-content > .product_list > .heading > .size > form > select {
   padding: 5px 5px;
   font-size: 14px;
   color: black;
   border: 1px solid rgb(221, 221, 221);
 }
-.main-content > div > .heading > .size > form > select > option {
+.main-content > .product_list > .heading > .size > form > select > option {
   padding: 5px 5px;
   color: black;
 }
-.main-content > div > .heading > .size > form > a > i {
+.main-content > .product_list > .heading > .size > form > a > i {
   font-weight: bold;
   font-size: 15px;
   padding: 0px 7px;
   color: black;
 }
-.main-content > div > .product-list {
+
+.main-content > .product_list {
+  grid-area: product_list;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 0px 10px;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "heading heading heading heading"
+    "item-1 item-2 item-3 item-4"
+    "item-5 item-6 item-7 item-8";
+  grid-gap: 1rem;
+}
+.main-content > .product_list > #item-1 {
+  grid-area: item-1;
+}
+.main-content > .product_list > #item-2 {
+  grid-area: item-2;
+}
+.main-content > .product_list > #item-3 {
+  grid-area: item-3;
+}
+.main-content > .product_list > #item-4 {
+  grid-area: item-4;
+}
+.main-content > .product_list > #item-5 {
+  grid-area: item-5;
+}
+.main-content > .product_list > #item-6 {
+  grid-area: item-6;
+}
+.main-content > .product_list > #item-7 {
+  grid-area: item-7;
+}
+.main-content > .product_list > #item-8 {
+  grid-area: item-8;
+}
+.main-content > .product_list > .card {
+  padding: 0;
+  margin: 0;
+}
+.main-content > .product-list > .card > img {
+  width: 100%;
+  height: auto;
+}
+.main-content > .product_list > .card > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: 8px 5px;
+  padding: 8px 8px;
+  font-size: 15px;
+  font-family: Poppins;
+}
+.main-content > .product_list > .card:hover > img {
+  box-shadow: 0px 15px 20px -13px gray;
+}
+
+.main-content > .product_list > .card > p > a {
+  color: rgb(49, 49, 49);
+  margin: 5px 5px;
+}
+.main-content > .product_list > .card > p > #price {
+  padding: 5px 10px;
+  font-family: Oswald;
+  font-size: 18px;
+  color: rgb(49, 49, 49);
+  font-weight: 600;
+}
+.main-content > .product_list > .card > p > .rating {
+  color: rgb(209, 204, 204);
+}
+.main-content > .product_list > .card > p > a:hover {
+  text-decoration: none;
+}
+.main-content > .product_list > .card > .group-btn > button {
+  text-transform: uppercase;
+  font-family: Oswald;
+  color: rgb(49, 49, 49);
+  border-radius: 0px;
+}
+
+.main-content > .product_list > .card > .group-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Oswald;
+}
+
+.main-content > .product_list > .card > .group-btn > #cart01 {
+  display: none;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 0px;
+  width: 40px;
+}
+.main-content > .product_list > #item-1 > .group-btn > #btn > i {
+  display: none;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+.main-content > .product_list > #item-1:hover > .group-btn > #btn > i {
+  display: inline-block;
+}
+.main-content > .product_list > #item-1:hover > .group-btn > #btn {
+  background-color: rgb(49, 49, 49);
+  color: whitesmoke;
+}
+.main-content > .product_list > .card > .group-btn > #cart02 {
+  display: none;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 0px;
+  width: 40px;
+}
+.main-content > .product_list > #item-2 > .group-btn > #btn > i {
+  display: none;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+.main-content > .product_list > #item-2:hover > .group-btn > #btn > i {
+  display: inline-block;
+}
+.main-content > .product_list > #item-2:hover > .group-btn > #btn {
+  background-color: rgb(49, 49, 49);
+  color: whitesmoke;
+}
+.main-content > .product_list > .card > .group-btn > #cart03 {
+  display: none;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 0px;
+  width: 40px;
+}
+.main-content > .product_list > #item-3 > .group-btn > #btn > i {
+  display: none;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+.main-content > .product_list > #item-3:hover > .group-btn > #btn > i {
+  display: inline-block;
+}
+.main-content > .product_list > #item-3:hover > .group-btn > #btn {
+  background-color: rgb(49, 49, 49);
+  border-radius: 0px;
+  color: whitesmoke;
+}
+.main-content > .product_list > .card > .group-btn > #cart04 {
+  display: none;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 0px;
+  width: 40px;
+}
+.main-content > .product_list > #item-4 > .group-btn > #btn > i {
+  display: none;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+.main-content > .product_list > #item-4:hover > .group-btn > #btn > i {
+  display: inline-block;
+}
+
+.main-content > .product_list > #item-4:hover > .group-btn > #btn {
+  background-color: rgb(49, 49, 49);
+  color: whitesmoke;
+}
+.main-content > .product_list > .card > .group-btn > #cart05 {
+  display: none;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 0px;
+  width: 40px;
+}
+.main-content > .product_list > #item-5 > .group-btn > #btn > i {
+  display: none;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+
+.main-content > .product_list > #item-5:hover > .group-btn > #btn > i {
+  display: inline-block;
+}
+
+.main-content > .product_list > #item-5:hover > .group-btn > #btn {
+  background-color: rgb(49, 49, 49);
+  color: whitesmoke;
+}
+.main-content > .product_list > .card > .group-btn > #cart06 {
+  display: none;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 0px;
+  width: 40px;
+}
+.main-content > .product_list > #item-6 > .group-btn > #btn > i {
+  display: none;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+
+.main-content > .product_list > #item-6:hover > .group-btn > #btn > i {
+  display: inline-block;
+}
+
+.main-content > .product_list > #item-6:hover > .group-btn > #btn {
+  background-color: rgb(49, 49, 49);
+  color: whitesmoke;
+}
+.main-content > .product_list > .card > .group-btn > #cart07 {
+  display: none;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 0px;
+  width: 40px;
+}
+.main-content > .product_list > #item-7 > .group-btn > #btn > i {
+  display: none;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+
+.main-content > .product_list > #item-7:hover > .group-btn > #btn > i {
+  display: inline-block;
+}
+
+.main-content > .product_list > #item-7:hover > .group-btn > #btn {
+  background-color: rgb(49, 49, 49);
+  color: whitesmoke;
+}
+.main-content > .product_list > .card > .group-btn > #cart08 {
+  display: none;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 0px;
+  width: 40px;
+}
+.main-content > .product_list > #item-8 > .group-btn > #btn > i {
+  display: none;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+.main-content > .product_list > #item-8:hover > .group-btn > #btn > i {
+  display: inline-block;
+}
+.main-content > .product_list > #item-8:hover > .group-btn > #btn {
+  background-color: rgb(49, 49, 49);
+  color: whitesmoke;
+}
+.main-content > .HR {
+  width: 100%;
+  margin: 30px 0px;
+  background-color: rgb(235, 235, 235);
+  height: 0.2px;
+}
+
+/* }
+.main-content > .product_list > .product-list {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "heading heading heading heading"
+    "item-1 item-2 item-3 item-4"
+    "item-5 item-6 item-7 item-8";
+  grid-gap: 2rem;
   width: 100%;
 }
-.main-content > div > .product-list > .card {
-  margin: 10px 10px;
-  object-fit: cover;
+.main-content > div > .product_list > #item-1 {
+  grid-area: item-1;
+}
+.main-content > div > .product_list > #item-2 {
+  grid-area: item-2;
+}
+.main-content > div > .product_list > #item-3 {
+  grid-area: item-3;
+}
+.main-content > div > .product_list > #item-4 {
+  grid-area: item-4;
+}
+.main-content > div > .product_list > #item-5 {
+  grid-area: item-5;
+}
+.main-content > div > .product_list > #item-6 {
+  grid-area: item-6;
+}
+.main-content > div > .product_list > #item-7 {
+  grid-area: item-7;
+}
+.main-content > div > .product_list > #item-8 {
+  grid-area: item-8;
 }
 .main-content > div > .product-list > .card > img {
   width: 100%;
@@ -434,7 +713,8 @@ ul li ul.dropdown li {
   margin: 30px 0px;
   background-color: rgb(235, 235, 235);
   height: 0.2px;
-}
+} */
+
 .footer {
   margin: 0;
   padding: 0;

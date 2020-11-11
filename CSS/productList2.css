@@ -144,16 +144,13 @@ ul li ul.dropdown li {
   float: right;
   color: rgb(68, 68, 68);
 }
-.main-content > .filter > div > ul > li > .slow {
-  padding: 25px 10px;
-  display: none;
+.main-content > .filter > div > ul > li > #collapseOne {
+  padding: 15px 5px;
 }
-
-.main-content > .filter > div > ul > li > .color {
-  padding: 25px 10px;
-  display: none;
+.main-content > .filter > div > ul > li > #collapseTwo {
+  padding: 15px 5px;
 }
-.main-content > .filter > div > ul > li > .color > p {
+.main-content > .filter > div > ul > li > #collapseTwo > p {
   color: black;
 }
 .main-content > div {
