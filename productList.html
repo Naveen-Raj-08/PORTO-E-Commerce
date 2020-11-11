@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
     />
-
     <!--Owl Carousel-->
     <link
       rel="stylesheet"
@@ -122,66 +121,85 @@
           <div>
             <ul>
               <li>
-                <a class="collapsed card-link card-header"
+                <a
+                  class="collapsed collection"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
                   >Price <i id="toggle-btn" class="fas fa-angle-down"></i
                 ></a>
-                <div class="slow" id="toggleCollapse">
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  data-parent="#accordion"
+                  data-role="rangeslider"
+                >
                   <input
                     type="range"
-                    min="1"
+                    name="range-1a"
+                    id="range-1a"
+                    min="0"
                     max="100"
-                    value="50"
-                    class="slider"
-                    id="myRange"
+                    value="40"
+                    data-popup-enabled="true"
+                    data-show-value="true"
                   />
                 </div>
               </li>
               <li>
-                <a class="collapsed"
-                  >Color<i id="colorChange" class="fas fa-angle-down"></i
-                ></a>
-                <div class="color" id="toggleCollapse">
+                <a
+                  class="collapsed collection"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                >
+                  Color <i id="colorChange" class="fas fa-angle-down"></i>
+                </a>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
                   <p id="colors">Welcome to the Filter</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
-        <div>
+        <div class="product_list">
           <div class="heading">
             <div class="sorting">
-                <form>
-                  <label for="product">Sort By  </label>
-                  <select name="product" id="product">
-                    <option id="value" value="sorting">Product Name</option>
-                    <option id="value" value="sorting">Price</option>
-                    <option id="value" value="sorting" selected="selected">Relevance</option>
-                  </select>
-                  <a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
-                </form>
+              <form>
+                <label for="product">Sort By </label>
+                <select name="product" id="product">
+                  <option id="value" value="sorting">Product Name</option>
+                  <option id="value" value="sorting">Price</option>
+                  <option id="value" value="sorting" selected="selected">
+                    Relevance
+                  </option>
+                </select>
+                <a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+              </form>
             </div>
             <div class="size">
               <form>
-                <label for="product">Show  </label>
+                <label for="product">Show </label>
                 <select name="product" id="product">
-                  <option value="sorting"selected="selected">12</option>
+                  <option value="sorting" selected="selected">12</option>
                   <option value="sorting">24</option>
-                  <option value="sorting" >32</option>
+                  <option value="sorting">32</option>
                 </select>
-                <a href="#" onclick="ReplaceGrid()"><i class="fas fa-th"></i></a>
-                <a href="#" onclick="ReplaceList()"><i class="fas fa-list"></i></a>
+                <a href="#" onclick="ReplaceGrid()"
+                  ><i class="fas fa-th"></i
+                ></a>
+                <a href="#" onclick="ReplaceList()"
+                  ><i class="fas fa-list"></i
+                ></a>
               </form>
             </div>
           </div>
-        <div class="product-list">
           <div class="card" id="item-1">
             <img
-              src="./Images/New08.jpg"
-              style="width: 150px; height: auto"
+              src="./Images/New12.jpg"
+              style="width: 200px; height: auto"
               alt="model"
             />
             <p>
-              <a href="#">Ladies HandBag</a>
+              <a href="productPage.html">Women Black Top</a>
               <span class="rating">
                 <i class="fa fa-star" style="font-size: x-small"></i>
                 <i class="fa fa-star" style="font-size: x-small"></i>
@@ -192,22 +210,26 @@
               <span id="price">$90.00</span>
             </p>
             <div class="group-btn">
-              <button id="cart01"><i class="far fa-heart"></i></button>
-              <button class="btn">
+              <button class="btn" id="cart01">
+                <i class="far fa-heart"></i>
+              </button>
+              <button id="btn" class="btn">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
-              <button id="cart01"><i class="fas fa-signal"></i></button>
+              <button class="btn" id="cart01">
+                <i class="fas fa-signal"></i>
+              </button>
             </div>
           </div>
           <div class="card" id="item-2">
             <img
-              src="./Images/New09.jpg"
-              style="width: 150px; height: auto"
+              src="./Images/New11.jpg"
+              style="width: 200px; height: auto"
               alt="model"
             />
             <p>
-              <a href="#">Ladies HandBag</a>
+              <a href="productPage.html">Women Black Top</a>
               <span class="rating">
                 <i class="fa fa-star" style="font-size: x-small"></i>
                 <i class="fa fa-star" style="font-size: x-small"></i>
@@ -218,22 +240,26 @@
               <span id="price">$90.00</span>
             </p>
             <div class="group-btn">
-              <button id="cart02"><i class="far fa-heart"></i></button>
-              <button class="btn">
+              <button class="btn" id="cart02">
+                <i class="far fa-heart"></i>
+              </button>
+              <button id="btn" class="btn">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
-              <button id="cart02"><i class="fas fa-signal"></i></button>
+              <button class="btn" id="cart02">
+                <i class="fas fa-signal"></i>
+              </button>
             </div>
           </div>
           <div class="card" id="item-3">
             <img
-              src="./Images/New12.jpg"
-              style="width: 150px; height: auto"
+              src="./Images/New09.jpg"
+              style="width: 200px; height: auto"
               alt="model"
             />
             <p>
-              <a href="#">Ladies HandBag</a>
+              <a href="productPage.html">Women Black Top</a>
               <span class="rating">
                 <i class="fa fa-star" style="font-size: x-small"></i>
                 <i class="fa fa-star" style="font-size: x-small"></i>
@@ -244,22 +270,26 @@
               <span id="price">$90.00</span>
             </p>
             <div class="group-btn">
-              <button id="cart03"><i class="far fa-heart"></i></button>
-              <button class="btn">
+              <button class="btn" id="cart03">
+                <i class="far fa-heart"></i>
+              </button>
+              <button id="btn" class="btn">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
-              <button id="cart03"><i class="fas fa-signal"></i></button>
+              <button class="btn" id="cart03">
+                <i class="fas fa-signal"></i>
+              </button>
             </div>
           </div>
           <div class="card" id="item-4">
             <img
-              src="./Images/New11.jpg"
-              style="width: 150px; height: auto"
+              src="./Images/New08.jpg"
+              style="width: 200px; height: auto"
               alt="model"
             />
             <p>
-              <a href="#">Ladies HandBag</a>
+              <a href="productPage.html">Women Black Top</a>
               <span class="rating">
                 <i class="fa fa-star" style="font-size: x-small"></i>
                 <i class="fa fa-star" style="font-size: x-small"></i>
@@ -270,22 +300,26 @@
               <span id="price">$90.00</span>
             </p>
             <div class="group-btn">
-              <button id="cart04"><i class="far fa-heart"></i></button>
-              <button class="btn">
+              <button class="btn" id="cart04">
+                <i class="far fa-heart"></i>
+              </button>
+              <button id="btn" class="btn">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
-              <button id="cart04"><i class="fas fa-signal"></i></button>
+              <button class="btn" id="cart04">
+                <i class="fas fa-signal"></i>
+              </button>
             </div>
           </div>
           <div class="card" id="item-5">
             <img
               src="./Images/handbag01.jpg"
-              style="width: 150px; height: auto"
+              style="width: 200px; height: auto"
               alt="model"
             />
             <p>
-              <a href="#">Ladies HandBag</a>
+              <a href="productPage.html">Women Black Top</a>
               <span class="rating">
                 <i class="fa fa-star" style="font-size: x-small"></i>
                 <i class="fa fa-star" style="font-size: x-small"></i>
@@ -296,22 +330,26 @@
               <span id="price">$90.00</span>
             </p>
             <div class="group-btn">
-              <button id="cart05"><i class="far fa-heart"></i></button>
-              <button class="btn">
+              <button class="btn" id="cart05">
+                <i class="far fa-heart"></i>
+              </button>
+              <button id="btn" class="btn">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
-              <button id="cart05"><i class="fas fa-signal"></i></button>
+              <button class="btn" id="cart05">
+                <i class="fas fa-signal"></i>
+              </button>
             </div>
           </div>
           <div class="card" id="item-6">
             <img
               src="./Images/handbag02.jpg"
-              style="width: 150px; height: auto"
+              style="width: 200px; height: auto"
               alt="model"
             />
             <p>
-              <a href="#">Ladies HandBag</a>
+              <a href="productPage.html">Women Black Top</a>
               <span class="rating">
                 <i class="fa fa-star" style="font-size: x-small"></i>
                 <i class="fa fa-star" style="font-size: x-small"></i>
@@ -322,22 +360,26 @@
               <span id="price">$90.00</span>
             </p>
             <div class="group-btn">
-              <button id="cart06"><i class="far fa-heart"></i></button>
-              <button class="btn">
+              <button class="btn" id="cart06">
+                <i class="far fa-heart"></i>
+              </button>
+              <button id="btn" class="btn">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
-              <button id="cart06"><i class="fas fa-signal"></i></button>
+              <button class="btn" id="cart06">
+                <i class="fas fa-signal"></i>
+              </button>
             </div>
           </div>
           <div class="card" id="item-7">
             <img
               src="./Images/handbag03.jpg"
-              style="width: 150px; height: auto"
+              style="width: 200px; height: auto"
               alt="model"
             />
             <p>
-              <a href="#">Ladies HandBag</a>
+              <a href="productPage.html">Women Black Top</a>
               <span class="rating">
                 <i class="fa fa-star" style="font-size: x-small"></i>
                 <i class="fa fa-star" style="font-size: x-small"></i>
@@ -348,22 +390,26 @@
               <span id="price">$90.00</span>
             </p>
             <div class="group-btn">
-              <button id="cart07"><i class="far fa-heart"></i></button>
-              <button class="btn">
+              <button class="btn" id="cart07">
+                <i class="far fa-heart"></i>
+              </button>
+              <button id="btn" class="btn">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
-              <button id="cart07"><i class="fas fa-signal"></i></button>
+              <button class="btn" id="cart07">
+                <i class="fas fa-signal"></i>
+              </button>
             </div>
           </div>
           <div class="card" id="item-8">
             <img
               src="./Images/handbag04.jpg"
-              style="width: 150px; height: auto"
+              style="width: 200px; height: auto"
               alt="model"
             />
             <p>
-              <a href="#">Ladies HandBag</a>
+              <a href="productPage.html">Women Black Top</a>
               <span class="rating">
                 <i class="fa fa-star" style="font-size: x-small"></i>
                 <i class="fa fa-star" style="font-size: x-small"></i>
@@ -374,162 +420,163 @@
               <span id="price">$90.00</span>
             </p>
             <div class="group-btn">
-              <button id="cart08"><i class="far fa-heart"></i></button>
-              <button class="btn">
+              <button class="btn" id="cart08">
+                <i class="far fa-heart"></i>
+              </button>
+              <button id="btn" class="btn">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
-              <button id="cart08"><i class="fas fa-signal"></i></button>
+              <button class="btn" id="cart08">
+                <i class="fas fa-signal"></i>
+              </button>
             </div>
           </div>
         </div>
-        <div class="HR"></div>
       </div>
-      </div>
-        <div class="footer">
-          <div class="container">
-            <div class="footer-body">
-              <div class="body">
-                <h5>About us</h5>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-body">
+            <div class="body">
+              <h5>About us</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                tristique<br />
+                augue eget enim feugiat blandit. Phasellus bibendum ex leo,
+                at<br />
+                egestas lacus pellentesque in x leo, at egestas lacus.
+              </p>
+              <div class="contact">
+                <div>
+                  <h5>Contact Info</h5>
+                  <h6>Address</h6>
+                  <span>
+                    123 Street Name, City,<br />
+                    England, Pintrest street oklar
+                  </span>
+                </div>
+                <div>
+                  <h6>Phone</h6>
+                  <span>(123) 456-7890</span>
+                  <h6>Email</h6>
+                  <a href="mailto:someone@example.com">yourstyleporto.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="featured-product">
+              <h5>Featured Products</h5>
+              <div class="product1">
+                <img
+                  src="./Images/product-01.jpg"
+                  width="95"
+                  height="auto"
+                  alt="product"
+                />
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  tristique<br />
-                  augue eget enim feugiat blandit. Phasellus bibendum ex leo,
-                  at<br />
-                  egestas lacus pellentesque in x leo, at egestas lacus.
+                  <a href="#">Women Black Top</a>
+                  <span class="rating">
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                  </span>
+                  <span>$90.00</span>
                 </p>
-                <div class="contact">
-                  <div>
-                    <h5>Contact Info</h5>
-                    <h6>Address</h6>
-                    <span>
-                      123 Street Name, City,<br />
-                      England, Pintrest street oklar
-                    </span>
-                  </div>
-                  <div>
-                    <h6>Phone</h6>
-                    <span>(123) 456-7890</span>
-                    <h6>Email</h6>
-                    <a href="mailto:someone@example.com">yourstyleporto.com</a>
-                  </div>
-                </div>
               </div>
-              <div class="featured-product">
-                <h5>Featured Products</h5>
-                <div class="product1">
-                  <img
-                    src="./Images/product-01.jpg"
-                    width="95"
-                    height="auto"
-                    alt="product"
-                  />
-                  <p>
-                    <a href="#">Women Black Top</a>
-                    <span class="rating">
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                    </span>
-                    <span>$90.00</span>
-                  </p>
-                </div>
-                <div class="product2">
-                  <img
-                    src="./Images/product-02.jpg"
-                    width="95"
-                    height="auto"
-                    alt="product"
-                  />
-                  <p>
-                    <a href="#">Women Black Top</a>
-                    <span class="rating">
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                      <i class="fa fa-star" style="font-size: x-small"></i>
-                    </span>
-                    <span id="offer">$100.00</span>
-                    <span>$50.00</span>
-                  </p>
-                </div>
-              </div>
-              <div class="Follow">
-                <h5>Follow Us</h5>
-                <a
-                  class="twitter-timeline"
-                  data-width="300"
-                  data-height="200"
-                  data-dnt="true"
-                  data-theme="dark"
-                  href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw"
-                  >Tweets by TwitterDev</a
-                >
+              <div class="product2">
+                <img
+                  src="./Images/product-02.jpg"
+                  width="95"
+                  height="auto"
+                  alt="product"
+                />
+                <p>
+                  <a href="#">Women Black Top</a>
+                  <span class="rating">
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                    <i class="fa fa-star" style="font-size: x-small"></i>
+                  </span>
+                  <span id="offer">$100.00</span>
+                  <span>$50.00</span>
+                </p>
               </div>
             </div>
-            <div class="HR"></div>
-            <div class="footer-bottom">
-              <div class="Account">
-                <div>
-                  <h5>My Account</h5>
-                  <a href="#">About us</a>
-                  <a href="#">Contact us</a>
-                  <a href="#">My Account</a>
-                </div>
-                <div class="sec">
-                  <a href="#">Order History</a>
-                  <a href="#">Advanced Search</a>
-                  <a href="#">Login</a>
-                </div>
-              </div>
-              <div class="feature">
-                <div>
-                  <h5>Main Features</h5>
-                  <a href="#">Super Fast Magento Theme</a>
-                  <a href="#">1st Fully working Ajax Theme</a>
-                  <a href="#">20 Unique Homepage Layouts</a>
-                </div>
-                <div id="sec">
-                  <a href="#">Powerful Admin Panel</a>
-                  <a href="#">Mobile & Retina Optimized</a>
-                </div>
-              </div>
-              <div class="social">
-                <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
-                <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-              </div>
+            <div class="Follow">
+              <h5>Follow Us</h5>
+              <a
+                class="twitter-timeline"
+                data-width="300"
+                data-height="200"
+                data-dnt="true"
+                data-theme="dark"
+                href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw"
+                >Tweets by TwitterDev</a
+              >
             </div>
-            <div class="HR"></div>
-            <div id="footer">
+          </div>
+          <div class="HR"></div>
+          <div class="footer-bottom">
+            <div class="Account">
               <div>
-                <p>&copy; Porto eCommerce. 2020. All Rights Reserved</p>
+                <h5>My Account</h5>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <a href="#">My Account</a>
               </div>
-              <div class="subscribe">
-                <h5>NewsLetter</h5>
-                <div>
-                  <input type="search" required />
-                  <button>Subscribe</button>
-                </div>
+              <div class="sec">
+                <a href="#">Order History</a>
+                <a href="#">Advanced Search</a>
+                <a href="#">Login</a>
               </div>
-              <div id="payment">
-                <img src="./Images/Payment.png" />
+            </div>
+            <div class="feature">
+              <div>
+                <h5>Main Features</h5>
+                <a href="#">Super Fast Magento Theme</a>
+                <a href="#">1st Fully working Ajax Theme</a>
+                <a href="#">20 Unique Homepage Layouts</a>
               </div>
+              <div id="sec">
+                <a href="#">Powerful Admin Panel</a>
+                <a href="#">Mobile & Retina Optimized</a>
+              </div>
+            </div>
+            <div class="social">
+              <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="HR"></div>
+          <div id="footer">
+            <div>
+              <p>&copy; Porto eCommerce. 2020. All Rights Reserved</p>
+            </div>
+            <div class="subscribe">
+              <h5>NewsLetter</h5>
+              <div>
+                <input type="search" required />
+                <button>Subscribe</button>
+              </div>
+            </div>
+            <div id="payment">
+              <img src="./Images/Payment.png" />
             </div>
           </div>
         </div>
       </div>
-
-      <!--External JavaScript-->
-      <script src="./JavaScript/productList.js"></script>
-      <script
-        async
-        src="https://platform.twitter.com/widgets.js"
-        charset="utf-8"
-      ></script>
     </div>
+
+    <!--External JavaScript-->
+    <script src="./JavaScript/productList.js"></script>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
   </body>
 </html>
