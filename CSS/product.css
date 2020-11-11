@@ -871,12 +871,7 @@ td {
 .zoom img::selection {
   background-color: transparent;
 }
-@media screen and (min-width: 700px) and (max-width: 980px) {
-  .main > .Product > .product-details > .ourService {
-    display: none;
-  }
-}
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .main > .Product > .product-details {
     display: flex;
     flex-direction: column;
@@ -939,6 +934,107 @@ td {
   .main > .Product > #Custom-tab > table > tr > th {
     width: 100%;
     border: 1px solid black;
+  }
+  .footer > .container > .footer-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .body > .contact > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .featured-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .Follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer > .container > .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .footer > .container > .footer-bottom > .Account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer > .container > .footer-bottom > .Account > .sec {
+    padding: 0px;
+    margin: 0px;
+  }
+  .footer > .container > .footer-bottom > .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer > .container > .footer-bottom > .feature > #sec {
+    padding: 0;
+    margin: 0;
+  }
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer > .container > #footer > .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer > .container > #footer > .subscribe > h5 {
+    text-align: left;
+  }
+  .footer > .container > #footer > #payment {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .footer > .container > .footer-bottom > .social {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main > .Product > .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
   }
   .footer > .container > .footer-body {
     display: flex;
