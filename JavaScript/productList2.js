@@ -6,14 +6,6 @@ const ReplaceGrid = () => {
   location.replace("productList.html");
 };
 
-$(document).ready(function () {
-  $("#colorChange").click(function () {
-    $("div.color").slideToggle();
-  });
-});
-
-$(document).ready(function () {
-  $("#toggle-btn").click(function () {
-    $("div.slow").slideToggle();
-  });
+$(".collection").click(function () {
+  $(this).find("i").toggleClass("fas fa-angle-down fas fa-angle-up");
 });
