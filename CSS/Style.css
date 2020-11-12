@@ -17,6 +17,9 @@
 .navbar > .container > .nav-header > a {
   margin: 2px 0;
 }
+.navbar > .container > .collapse > .nav {
+  width: 85%;
+}
 .navbar > .container > .collapse > .nav > li > a {
   color: white;
   font-size: 13px;
@@ -24,7 +27,8 @@
   font-family: Secular One;
   text-transform: uppercase;
   margin: 6px 5px;
-  padding: 10px 10px;
+  padding: 7px 5px;
+  margin-top: 10px;
 }
 .navbar > .container > .collapse > .nav > li > a:hover {
   background-color: rgb(41, 34, 34);
@@ -69,7 +73,7 @@ ul li ul.dropdown li {
   text-decoration: none;
   padding-top: 10px;
   float: right;
-  position: relative;
+  position: absolute;
   display: inline-block;
   background-color: transparent;
 }
@@ -586,7 +590,7 @@ ul li ul.dropdown li {
   text-transform: uppercase;
   border-radius: 0px;
   color: rgb(126, 126, 126);
-  padding: 7px 10px;
+  padding: 7px 5px;
   font-weight: 200;
   border: none;
   font-size: 15px;
@@ -1244,6 +1248,7 @@ ul li ul.dropdown li {
   color: black;
   width: 200px;
   letter-spacing: 1.5px;
+  background-color: whitesmoke;
 }
 .footer > .container > #footer > .subscribe > div > button {
   float: right;
@@ -1302,6 +1307,16 @@ ul li ul.dropdown li {
     text-align: center;
     font-family: Oswald;
     height: 25px;
+  }
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .footer > .container > #footer > #payment {
+    margin: 10px 0px;
   }
 }
 /* Tablet Portrait */

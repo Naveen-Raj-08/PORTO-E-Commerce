@@ -340,22 +340,20 @@ ul li ul.dropdown li {
   padding: 20px 5px 5px 20px;
 }
 .main > .Product > .product-details > .ourService {
-  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  float: right;
+  align-items: flex-start;
 }
 .main > .Product > .product-details > .ourService > .shipping {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px 0px;
 }
 .main > .Product > .product-details > .ourService > .shipping > i {
-  padding: 20px 10px;
+  padding: 20px 20px;
   color: rgb(156, 156, 156);
   text-align: left;
 }
@@ -830,6 +828,7 @@ td {
   color: black;
   width: 200px;
   letter-spacing: 1.5px;
+  background-color: whitesmoke;
 }
 .footer > .container > #footer > .subscribe > div > button {
   float: right;
@@ -876,8 +875,17 @@ td {
 }
 /* Tablet Landscape */
 @media screen and (max-width: 1199px) {
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer > .container > #footer > #payment {
+    margin: 10px 0px;
+  }
 }
-
 /* Tablet Portrait */
 @media screen and (max-width: 991px) {
   .main > .Product > .product-details {
@@ -898,10 +906,100 @@ td {
     align-items: flex-start;
     padding: 10px 0px 30px 0px;
   }
+  .footer > .container > .footer-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .body > .contact > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .featured-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .Follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer > .container > .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .footer > .container > .footer-bottom > .Account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer > .container > .footer-bottom > .Account > .sec {
+    padding: 0px;
+    margin: 0px;
+  }
+  .footer > .container > .footer-bottom > .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer > .container > .footer-bottom > .feature > #sec {
+    padding: 0;
+    margin: 0;
+  }
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer > .container > #footer > .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer > .container > #footer > .subscribe > h5 {
+    text-align: left;
+  }
+  .footer > .container > #footer > #payment {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .footer > .container > .footer-bottom > .social {
+    margin-top: 20px;
+  }
 }
-
 /* Mobile Landscape */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
   .Product {
     width: 100%;
   }
@@ -1033,7 +1131,6 @@ td {
     margin-top: 20px;
   }
 }
-
 /* Mobile Portrait*/
 @media screen and (max-width: 480px) {
   .main > .Product > .product-details {
