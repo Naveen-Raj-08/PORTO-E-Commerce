@@ -132,6 +132,7 @@ ul li ul.dropdown li {
 .main > .Product > .product-details > .product-spec > .product-title > div > a {
   color: rgb(100, 100, 100);
   margin: 0px 5px;
+  font-weight: 100;
 }
 .main
   > .Product
@@ -257,7 +258,7 @@ ul li ul.dropdown li {
   font-weight: bold;
 }
 .main > .Product > .product-details > .product-spec > .btn-group > .cart-btn {
-  margin: 0px 10px;
+  margin: 0px 5;
   border: none;
 }
 .main
@@ -351,7 +352,7 @@ ul li ul.dropdown li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 .main > .Product > .product-details > .ourService > .shipping > i {
   padding: 20px 10px;
@@ -855,6 +856,7 @@ td {
 
 .zoom {
   display: inline-block;
+  max-width: 100%;
 }
 .zoom:after {
   content: "";
@@ -867,39 +869,54 @@ td {
 }
 .zoom img {
   display: block;
+  max-width: 100%;
 }
 .zoom img::selection {
   background-color: transparent;
 }
-@media screen and (max-width: 480px) {
+/* Tablet Landscape */
+@media screen and (max-width: 1199px) {
+}
+
+/* Tablet Portrait */
+@media screen and (max-width: 991px) {
+  .main > .Product > .product-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+  .main > .Product > .product-details > .ourService {
+    display: none;
+  }
+  .main > .Product > .product-details > .product-spec > .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 0px 30px 0px;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 770px) {
+  .Product {
+    width: 100%;
+  }
   .main > .Product > .product-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
-  }
-  .main > .Product > .product-details > .product-zoom {
-    padding: 0;
-    margin: 0;
     width: 100%;
   }
-  .main > .Product > .product-details > .product-zoom > span {
-    padding: 0;
-    margin: 0;
-  }
+
   .main > .Product > .product-details > .product-zoom > span > img {
-    padding: 0px;
-    margin: 0px;
-  }
-  .main > .Product > .product-details > .product-spec {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    max-width: 100%;
+    height: auto;
   }
   .main
     > .Product
@@ -911,29 +928,18 @@ td {
     > span {
     display: none;
   }
-
+  .main > .Product > .product-details > .product-spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
   .main > .Product > .product-details > .ourService {
     display: none;
   }
-  .main > .Product > .product-details > .product-spec > .rating {
-    font-size: small;
-  }
-  .main > .Product > .tabs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .main > .Product > .tabs > .product_details {
-    padding: 10px 10px;
-  }
-  .main > .Product > #Review > form > input {
-    width: 250px;
-  }
-  .main > .Product > #Review > form > textarea {
-    width: 250px;
-  }
-  .main > .Product > #Custom-tab > table > tr > th {
+  table {
     width: 100%;
-    border: 1px solid black;
   }
   .footer > .container > .footer-body {
     display: flex;
@@ -1027,14 +1033,71 @@ td {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 767px) {
+
+/* Mobile Portrait*/
+@media screen and (max-width: 480px) {
   .main > .Product > .product-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: left;
+  }
+  .main > .Product > .product-details > .product-zoom {
+    padding: 0;
+    margin: 0;
     width: 100%;
+  }
+  .main > .Product > .product-details > .product-zoom > span {
+    padding: 0;
+    margin: 0;
+  }
+  .main > .Product > .product-details > .product-zoom > span > img {
+    padding: 0px;
+    margin: 0px;
+  }
+  .main > .Product > .product-details > .product-spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .main
+    > .Product
+    > .product-details
+    > .product-spec
+    > .product-title
+    > div
+    > a
+    > span {
+    display: none;
+  }
+
+  .main > .Product > .product-details > .ourService {
+    display: none;
+  }
+  .main > .Product > .product-details > .product-spec > .rating {
+    font-size: small;
+  }
+  .main > .Product > .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .main > .Product > .tabs > .product_details {
+    padding: 10px 10px;
+  }
+  .main > .Product > #Review > form > input {
+    width: 250px;
+  }
+  .main > .Product > #Review > form > textarea {
+    width: 250px;
+  }
+  .main > .Product > #Custom-tab > table > tr > th {
+    width: 100%;
+    border: 1px solid black;
   }
   .footer > .container > .footer-body {
     display: flex;
