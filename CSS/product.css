@@ -2,20 +2,23 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Open Sans");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.main {
+.home {
   width: 100%;
+  height: auto;
 }
 .navbar {
   background-color: rgb(85, 78, 78);
 }
 .navbar > .container > .nav-header > a {
   margin: 2px 0;
+}
+.navbar > .container > .collapse > .nav {
+  width: 85%;
 }
 .navbar > .container > .collapse > .nav > li > a {
   color: white;
@@ -24,7 +27,8 @@
   font-family: Secular One;
   text-transform: uppercase;
   margin: 6px 5px;
-  padding: 10px 10px;
+  padding: 7px 5px;
+  margin-top: 10px;
 }
 .navbar > .container > .collapse > .nav > li > a:hover {
   background-color: rgb(41, 34, 34);
@@ -69,7 +73,7 @@ ul li ul.dropdown li {
   text-decoration: none;
   padding-top: 10px;
   float: right;
-  position: relative;
+  position: absolute;
   display: inline-block;
   background-color: transparent;
 }
