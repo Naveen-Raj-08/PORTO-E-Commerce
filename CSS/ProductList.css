@@ -8,28 +8,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-.main {
+.home {
   width: 100%;
+  height: auto;
 }
 .navbar {
   background-color: rgb(85, 78, 78);
 }
-.navbar > .container > .nav-header > a > img {
-  max-width: 100%;
-  height: auto;
+.navbar > .container > .nav-header > a {
+  margin: 2px 0;
 }
 .navbar > .container > .collapse > .nav {
   width: 85%;
 }
 .navbar > .container > .collapse > .nav > li > a {
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
   font-family: Secular One;
   text-transform: uppercase;
   margin: 6px 5px;
-  padding: 7px 5px;
-  margin-top: 9px;
+  padding: 7px 10px;
+  margin-top: 10px;
 }
 .navbar > .container > .collapse > .nav > li > a:hover {
   background-color: rgb(41, 34, 34);
@@ -58,7 +58,7 @@ ul li ul.dropdown {
   background: white;
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   font-family: Oxygen;
   padding: 10px 10px;
@@ -74,11 +74,16 @@ ul li ul.dropdown li {
   text-decoration: none;
   padding-top: 10px;
   float: right;
-  position: absolute;
+  position: relative;
   display: inline-block;
   background-color: transparent;
 }
-
+.navbar > .container > .collapse > .notification > i {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: x-large;
+}
 .navbar > .container > .collapse > .notification:hover,
 :focus,
 :active {
@@ -87,7 +92,7 @@ ul li ul.dropdown li {
 .navbar > .container > .collapse > .notification .badge {
   position: absolute;
   top: 5px;
-  right: -10px;
+  right: 5px;
   font-size: 10px;
   padding: 5px 5px;
   background-color: tomato;
@@ -96,7 +101,6 @@ ul li ul.dropdown li {
   text-align: center;
   width: auto;
 }
-
 .main-content {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -108,7 +112,7 @@ ul li ul.dropdown li {
   grid-gap: 10px;
 }
 .main-content > .filter {
-  padding: 10px 10px;
+  padding: 10px 0px;
   font-family: Poppins;
   grid-area: filter;
 }
@@ -205,7 +209,7 @@ ul li ul.dropdown li {
   border: 1px solid rgb(221, 221, 221);
 }
 .main-content > .product_list > .heading > .size > form > select > option {
-  padding: 5px 5px;
+  padding: 5px 0px;
   color: black;
 }
 .main-content > .product_list > .heading > .size > form > a > i {
@@ -223,7 +227,8 @@ ul li ul.dropdown li {
     "heading heading heading heading"
     "item-1 item-2 item-3 item-4"
     "item-5 item-6 item-7 item-8";
-  grid-gap: 10px;
+  grid-gap: 5px;
+  float: left;
 }
 .main-content > .product_list > #item-1 {
   grid-area: item-1;
@@ -250,8 +255,6 @@ ul li ul.dropdown li {
   grid-area: item-8;
 }
 .main-content > .product_list > .card {
-  padding: 0;
-  margin: 0;
 }
 .main-content > .product-list > .card > img {
   max-width: 100%;
@@ -877,7 +880,6 @@ ul li ul.dropdown li {
       "heading heading heading"
       "item-1 item-2 item-3"
       "item-4 item-5 item-6";
-    grid-gap: 5px;
     float: left;
   }
   .main-content > .product_list > #item-7 {
@@ -1007,7 +1009,6 @@ ul li ul.dropdown li {
       "item-3 item-4"
       "item-5 item-6"
       "item-7 item-8";
-    grid-gap: 5px;
   }
   .footer > .container > .footer-body {
     display: flex;
@@ -1123,7 +1124,6 @@ ul li ul.dropdown li {
       " item-3 item-4"
       "item-5 item-6"
       "item-7 item-8";
-    grid-gap: 10px;
   }
   .main-content > .filter {
     display: none;

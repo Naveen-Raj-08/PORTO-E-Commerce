@@ -73,9 +73,15 @@ ul li ul.dropdown li {
   text-decoration: none;
   padding-top: 10px;
   float: right;
-  position: absolute;
+  position: relative;
   display: inline-block;
   background-color: transparent;
+}
+.navbar > .container > .collapse > .notification > i {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: x-large;
 }
 .navbar > .container > .collapse > .notification:hover,
 :focus,
@@ -85,7 +91,7 @@ ul li ul.dropdown li {
 .navbar > .container > .collapse > .notification .badge {
   position: absolute;
   top: 5px;
-  right: -10px;
+  right: 5px;
   font-size: 10px;
   padding: 5px 5px;
   background-color: tomato;
@@ -506,7 +512,7 @@ ul li ul.dropdown li {
 .home > .main-content > .product_list > .card > p > a:hover {
   text-decoration: none;
 }
-.home > .main-content > .product_list > .card > p > button {
+/* .home > .main-content > .product_list > .card > p > button {
   text-transform: uppercase;
   font-family: Oswald;
   background-color: rgb(197, 197, 197);
@@ -515,7 +521,7 @@ ul li ul.dropdown li {
 }
 .home > .main-content > .product_list > .card > p > button > i {
   color: whitesmoke;
-}
+} */
 .home > .main-content > .product_list > .card > .group-btn {
   display: flex;
   flex-direction: row;
@@ -529,7 +535,6 @@ ul li ul.dropdown li {
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
-
   width: 40px;
 }
 .home > .main-content > .product_list > .card > .group-btn > #cart02 {
@@ -537,7 +542,6 @@ ul li ul.dropdown li {
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
-
   width: 40px;
 }
 .home > .main-content > .product_list > .card > .group-btn > #cart03 {
@@ -545,7 +549,6 @@ ul li ul.dropdown li {
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
-
   width: 40px;
 }
 .home > .main-content > .product_list > .card > .group-btn > #cart04 {
@@ -553,7 +556,6 @@ ul li ul.dropdown li {
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
-
   width: 40px;
 }
 .home > .main-content > .product_list > .card > .group-btn > #cart05 {
@@ -568,7 +570,6 @@ ul li ul.dropdown li {
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
-
   width: 40px;
 }
 .home > .main-content > .product_list > .card > .group-btn > #cart07 {
@@ -576,7 +577,6 @@ ul li ul.dropdown li {
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
-
   width: 40px;
 }
 .home > .main-content > .product_list > .card > .group-btn > #cart08 {
@@ -584,8 +584,8 @@ ul li ul.dropdown li {
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
-
   width: 40px;
+  transition: transform 0.7s ease;
 }
 .home > .main-content > .product_list > .card > .group-btn > .btn {
   text-transform: uppercase;
@@ -1219,10 +1219,10 @@ ul li ul.dropdown li {
   justify-content: space-between;
   align-items: center;
   margin: 30px 0px;
+  text-align: center;
 }
 .footer > .container > #footer > div > p {
   color: rgb(175, 175, 175);
-  padding-top: 6px;
   font-size: small;
   font-family: Poppins;
 }
@@ -1231,6 +1231,7 @@ ul li ul.dropdown li {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 .footer > .container > #footer > .subscribe > h5 {
   font-family: Oswald;
@@ -1238,7 +1239,6 @@ ul li ul.dropdown li {
   font-weight: 400;
   letter-spacing: 0.5px;
   font-size: 15 px;
-  padding-right: 15px;
   color: white;
 }
 .footer > .container > #footer > .subscribe > div > input {
@@ -1273,6 +1273,10 @@ ul li ul.dropdown li {
 .footer > .container > #footer > .subscribe > div > input:focus,
 :active {
   outline: none;
+}
+.footer > .container > #footer > #payment > img {
+  max-width: 100%;
+  height: auto;
 }
 /* Tablet Landscape */
 @media screen and (max-width: 1199px) {
@@ -1321,13 +1325,9 @@ ul li ul.dropdown li {
   }
   .footer > .container > #footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
-  }
-  .footer > .container > #footer > #payment {
-    margin: 10px 0px;
   }
 }
 /* Tablet Portrait */

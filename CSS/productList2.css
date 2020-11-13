@@ -23,12 +23,12 @@
 }
 .navbar > .container > .collapse > .nav > li > a {
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
   font-family: Secular One;
   text-transform: uppercase;
   margin: 6px 5px;
-  padding: 7px 5px;
+  padding: 7px 10px;
   margin-top: 10px;
 }
 .navbar > .container > .collapse > .nav > li > a:hover {
@@ -74,9 +74,15 @@ ul li ul.dropdown li {
   text-decoration: none;
   padding-top: 10px;
   float: right;
-  position: absolute;
+  position: relative;
   display: inline-block;
   background-color: transparent;
+}
+.navbar > .container > .collapse > .notification > i {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: x-large;
 }
 .navbar > .container > .collapse > .notification:hover,
 :focus,
@@ -86,7 +92,7 @@ ul li ul.dropdown li {
 .navbar > .container > .collapse > .notification .badge {
   position: absolute;
   top: 5px;
-  right: -10px;
+  right: 5px;
   font-size: 10px;
   padding: 5px 5px;
   background-color: tomato;
