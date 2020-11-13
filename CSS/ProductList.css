@@ -999,6 +999,9 @@ ul li ul.dropdown li {
 }
 /* Mobile Landscape */
 @media screen and (max-width: 767px) {
+  .navbar > .container > .collapse > .notification {
+    display: none;
+  }
   .main-content > .product_list {
     grid-area: product_list;
     display: grid;

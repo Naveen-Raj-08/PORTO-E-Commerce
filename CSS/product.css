@@ -1033,6 +1033,9 @@ td {
 }
 /* Mobile Landscape */
 @media screen and (max-width: 767px) {
+  .navbar > .container > .collapse > .notification {
+    display: none;
+  }
   .Product {
     width: 100%;
   }

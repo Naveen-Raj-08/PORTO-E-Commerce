@@ -801,6 +801,9 @@ ul li ul.dropdown li {
 }
 /* Mobile Landscape */
 @media screen and (max-width: 767px) {
+  .navbar > .container > .collapse > .notification {
+    display: none;
+  }
   .main-content > div > .product-list {
     display: grid;
     grid-gap: 1rem;
