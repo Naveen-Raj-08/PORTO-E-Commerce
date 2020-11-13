@@ -847,6 +847,16 @@ ul li ul.dropdown li {
 
 /* Tablet Landscape */
 @media screen and (max-width: 1199px) {
+  .navbar > .container > .collapse > .nav > li > a {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: Secular One;
+    text-transform: uppercase;
+    margin: 6px 5px;
+    padding: 7px 5px;
+    margin-top: 9px;
+  }
   .main-content > .product_list {
     grid-area: product_list;
     display: grid;

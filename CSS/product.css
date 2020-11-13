@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+
 * {
   margin: 0;
   padding: 0;
@@ -359,7 +361,7 @@ ul li ul.dropdown li {
 .main > .Product > .product-details > .ourService > .shipping > i {
   padding: 20px 20px;
   color: rgb(156, 156, 156);
-  text-align: left;
+  text-align: center;
 }
 .main > .Product > .product-details > .ourService > .shipping > h4 {
   font-size: 14px;
@@ -369,7 +371,6 @@ ul li ul.dropdown li {
   font-weight: 600;
   color: rgb(77, 76, 76);
   float: right;
-  margin-right: 10px;
 }
 .main > .Product > .product-details > .ourService > .HR {
   width: 100%;
@@ -879,6 +880,25 @@ td {
 }
 /* Tablet Landscape */
 @media screen and (max-width: 1199px) {
+  .navbar > .container > .collapse > .nav > li > a {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: Secular One;
+    text-transform: uppercase;
+    margin: 6px 5px;
+    padding: 7px 5px;
+    margin-top: 9px;
+  }
+  .main > .Product > .product-details > .product-spec > .rating {
+    display: block;
+    font-size: small;
+    color: rgb(155, 155, 155);
+  }
+  .main > .Product > .product-details > .product-spec > .rating > .review {
+    padding: 0px;
+    border-left: none;
+  }
   .footer > .container > #footer {
     display: flex;
     flex-direction: column;
@@ -909,6 +929,9 @@ td {
     justify-content: center;
     align-items: flex-start;
     padding: 10px 0px 30px 0px;
+  }
+  .main > .Product > #Custom-tab > table {
+    width: 100%;
   }
   .footer > .container > .footer-body {
     display: flex;
@@ -1191,10 +1214,10 @@ td {
     padding: 10px 10px;
   }
   .main > .Product > #Review > form > input {
-    width: 250px;
+    width: 80%;
   }
   .main > .Product > #Review > form > textarea {
-    width: 250px;
+    width: 80%;
   }
   .main > .Product > #Custom-tab > table > tr > th {
     width: 100%;
