@@ -80,25 +80,26 @@ $(document).ready(function () {
   });
 });
 
-var owl = $("#carousel");
-owl.owlCarousel({
-  autoplay: true,
-  loop: true,
-  margin: 20,
-  responsive: {
-    0: {
-      items: 2,
+$(document).ready(function () {
+  $("#carousel").owlCarousel({
+    autoplay: true,
+    loop: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      960: {
+        items: 5,
+      },
+      1200: {
+        items: 6,
+      },
     },
-    600: {
-      items: 3,
-    },
-    960: {
-      items: 5,
-    },
-    1200: {
-      items: 6,
-    },
-  },
+  });
 });
 
 $(document).ready(function () {
