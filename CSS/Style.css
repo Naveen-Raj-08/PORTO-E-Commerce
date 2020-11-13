@@ -22,12 +22,12 @@
 }
 .navbar > .container > .collapse > .nav > li > a {
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
   font-family: Secular One;
   text-transform: uppercase;
   margin: 6px 5px;
-  padding: 7px 5px;
+  padding: 7px 10px;
   margin-top: 10px;
 }
 .navbar > .container > .collapse > .nav > li > a:hover {
@@ -394,16 +394,17 @@ ul li ul.dropdown li {
 .home > .main-content > .product_list > .heading > .HR {
   background-color: rgb(177, 177, 177);
   height: 0.5px;
-  width: 100%;
+  width: 80%;
 }
 .home > .main-content > .product_list > .heading > h4 {
   font-size: 20px;
-  margin-right: 30px;
+  margin-right: 20px;
   padding: 0px 10px;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
   width: 50%;
+  height: fit-content;
   color: rgb(39, 34, 34);
 }
 .home > .main-content > .product_list > #item-1 {
@@ -1347,6 +1348,31 @@ ul li ul.dropdown li {
   .home > .main-content > .product_list > #item-8 {
     display: none;
   }
+  .home > .Brands > .heading > h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(34, 34, 34);
+    width: 80%;
+  }
+  .home > .main-content > .product_list > .heading > h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(34, 34, 34);
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  .home > .main-content > .product_list > .heading > .HR {
+    background-color: rgb(204, 204, 204);
+    height: 0.5px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
   .footer > .container > .footer-body {
     display: flex;
     flex-direction: column;
@@ -1624,9 +1650,6 @@ ul li ul.dropdown li {
   .home > .main-content > .product_list > .heading > h4 {
     width: 50%;
     font-size: 17px;
-  }
-  .home > .main-content > .product_list > .heading > .HR {
-    width: 100%;
   }
   .footer > .container > .footer-body {
     display: flex;
