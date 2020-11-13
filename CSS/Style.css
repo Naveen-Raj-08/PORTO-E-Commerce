@@ -1363,7 +1363,7 @@ ul li ul.dropdown li {
     letter-spacing: 2px;
     color: rgb(34, 34, 34);
     width: 100%;
-    padding: 0px;
+    padding: 5px 0px;
     margin: 0px;
     margin-bottom: 15px;
   }
@@ -1651,8 +1651,13 @@ ul li ul.dropdown li {
     width: 100%;
   }
   .home > .main-content > .product_list > .heading > h4 {
-    width: 50%;
+    width: 100%;
     font-size: 17px;
+  }
+  .home > .main-content > .product_list > .heading > .HR {
+    background-color: rgb(177, 177, 177);
+    height: 0.5px;
+    width: 75%;
   }
   .footer > .container > .footer-body {
     display: flex;

@@ -809,10 +809,10 @@ td {
   justify-content: space-between;
   align-items: center;
   margin: 30px 0px;
+  text-align: center;
 }
 .footer > .container > #footer > div > p {
   color: rgb(175, 175, 175);
-  padding-top: 6px;
   font-size: small;
   font-family: Poppins;
 }
@@ -821,6 +821,7 @@ td {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 .footer > .container > #footer > .subscribe > h5 {
   font-family: Oswald;
@@ -828,7 +829,6 @@ td {
   font-weight: 400;
   letter-spacing: 0.5px;
   font-size: 15 px;
-  padding-right: 15px;
   color: white;
 }
 .footer > .container > #footer > .subscribe > div > input {
@@ -854,6 +854,7 @@ td {
   cursor: pointer;
   font-family: Oswald;
   text-transform: uppercase;
+  z-index: -1;
 }
 .footer > .container > #footer > .subscribe > div > button:focus,
 :active {
@@ -862,6 +863,10 @@ td {
 .footer > .container > #footer > .subscribe > div > input:focus,
 :active {
   outline: none;
+}
+.footer > .container > #footer > #payment > img {
+  max-width: 100%;
+  height: auto;
 }
 
 .zoom {
@@ -914,6 +919,12 @@ td {
   }
   .footer > .container > #footer > #payment {
     margin: 10px 0px;
+  }
+  .footer > .container > #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 /* Tablet Portrait */
