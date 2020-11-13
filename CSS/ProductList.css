@@ -72,7 +72,7 @@ ul li ul.dropdown li {
 .navbar > .container > .collapse > .notification {
   color: white;
   text-decoration: none;
-  padding-top: 10px;
+  padding: 10px 10px;
   float: right;
   position: relative;
   display: inline-block;
@@ -81,7 +81,7 @@ ul li ul.dropdown li {
 .navbar > .container > .collapse > .notification > i {
   position: absolute;
   top: 10px;
-  right: 12px;
+  right: 10px;
   font-size: x-large;
 }
 .navbar > .container > .collapse > .notification:hover,
@@ -253,8 +253,6 @@ ul li ul.dropdown li {
 }
 .main-content > .product_list > #item-8 {
   grid-area: item-8;
-}
-.main-content > .product_list > .card {
 }
 .main-content > .product-list > .card > img {
   max-width: 100%;
