@@ -700,6 +700,13 @@ ul li ul.dropdown li {
     padding: 7px 5px;
     margin-top: 9px;
   }
+  ul > li > ul > li > a {
+    color: rgb(41, 34, 34);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
   .main-content > div > .heading > .size {
     align-self: center;
   }
@@ -711,7 +718,7 @@ ul li ul.dropdown li {
   }
 }
 /* Tablet Portrait */
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .main > .main-content > .filter {
     display: none;
   }
@@ -723,9 +730,9 @@ ul li ul.dropdown li {
   }
   .footer > .container > .footer-body {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
   }
   .footer > .container > #footer {
@@ -748,22 +755,19 @@ ul li ul.dropdown li {
     align-items: flex-start;
     justify-content: center;
     padding-left: 0px;
-    padding-bottom: 20px;
-    width: 100%;
   }
   .footer > .container > .footer-body > .Follow {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    margin-top: 10px;
+    align-items: center;
+    margin-top: 20px;
   }
   .footer > .container > .footer-bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10px;
   }
   .footer > .container > .footer-bottom > .Account {
@@ -782,15 +786,17 @@ ul li ul.dropdown li {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 0px;
+    margin: 0;
   }
   .footer > .container > .footer-bottom > .feature > #sec {
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
   }
   .footer > .container > #footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
   .footer > .container > #footer > .subscribe {
     display: flex;
@@ -808,7 +814,7 @@ ul li ul.dropdown li {
     margin-bottom: 20px;
   }
   .footer > .container > .footer-bottom > .social {
-    margin-top: 20px;
+    margin-top: 60px;
   }
 }
 /* Mobile Landscape */

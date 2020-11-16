@@ -227,8 +227,9 @@ ul li ul.dropdown li {
     "heading heading heading heading"
     "item-1 item-2 item-3 item-4"
     "item-5 item-6 item-7 item-8";
-  grid-gap: 5px;
   float: left;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
 }
 .main-content > .product_list > #item-1 {
   grid-area: item-1;
@@ -254,9 +255,11 @@ ul li ul.dropdown li {
 .main-content > .product_list > #item-8 {
   grid-area: item-8;
 }
+
 .main-content > .product-list > .card > img {
   max-width: 100%;
   height: auto;
+  margin-top: 10px;
 }
 .main-content > .product_list > .card > p {
   display: flex;
@@ -272,7 +275,6 @@ ul li ul.dropdown li {
 .main-content > .product_list > .card:hover > img {
   box-shadow: 0px 15px 20px -13px gray;
 }
-
 .main-content > .product_list > .card > p > a {
   color: rgb(49, 49, 49);
   margin: 5px 5px;
@@ -864,6 +866,13 @@ ul li ul.dropdown li {
     padding: 7px 5px;
     margin-top: 9px;
   }
+  ul > li > ul > li > a {
+    color: rgb(41, 34, 34);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
   .main-content > .product_list {
     grid-area: product_list;
     display: grid;
@@ -874,6 +883,7 @@ ul li ul.dropdown li {
       "item-5 item-6 item-7 item-8";
     padding: 0px;
   }
+
   .footer > .container > #footer {
     display: flex;
     flex-direction: row;
@@ -900,9 +910,9 @@ ul li ul.dropdown li {
   }
   .footer > .container > .footer-body {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
   }
   .footer > .container > #footer {
@@ -925,22 +935,19 @@ ul li ul.dropdown li {
     align-items: flex-start;
     justify-content: center;
     padding-left: 0px;
-    padding-bottom: 20px;
-    width: 100%;
   }
   .footer > .container > .footer-body > .Follow {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    margin-top: 10px;
+    align-items: center;
+    margin-top: 20px;
   }
   .footer > .container > .footer-bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10px;
   }
   .footer > .container > .footer-bottom > .Account {
@@ -960,6 +967,7 @@ ul li ul.dropdown li {
     justify-content: center;
     align-items: flex-start;
     padding: 0px;
+    margin: 0;
   }
   .footer > .container > .footer-bottom > .feature > #sec {
     padding: 0px;
@@ -967,9 +975,8 @@ ul li ul.dropdown li {
   }
   .footer > .container > #footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
   .footer > .container > #footer > .subscribe {
     display: flex;
@@ -987,7 +994,7 @@ ul li ul.dropdown li {
     margin-bottom: 20px;
   }
   .footer > .container > .footer-bottom > .social {
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .home > .main-content > .product_list > .card > .overlay {
     position: absolute;
