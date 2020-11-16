@@ -830,16 +830,18 @@ td {
   letter-spacing: 0.5px;
   font-size: 15 px;
   color: white;
+  padding-right: 10px;
 }
 .footer > .container > #footer > .subscribe > div > input {
   height: 35px;
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
-  padding: 20px 20px;
+  padding: 21.5px 20px;
   color: black;
   width: 200px;
   letter-spacing: 1.5px;
   background-color: whitesmoke;
+  border: none;
 }
 .footer > .container > #footer > .subscribe > div > button {
   float: right;
@@ -854,7 +856,6 @@ td {
   cursor: pointer;
   font-family: Oswald;
   text-transform: uppercase;
-  z-index: -1;
 }
 .footer > .container > #footer > .subscribe > div > button:focus,
 :active {
@@ -974,13 +975,6 @@ td {
     flex-wrap: wrap;
     width: 100%;
   }
-  .footer > .container > #footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    width: 100%;
-  }
   .footer > .container > .footer-body > .body > .contact > div {
     display: flex;
     flex-direction: column;
@@ -1035,18 +1029,19 @@ td {
   .footer > .container > #footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
   }
+
   .footer > .container > #footer > .subscribe {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 10px;
     margin-bottom: 10px;
   }
   .footer > .container > #footer > .subscribe > h5 {
-    text-align: left;
+    align-self: center;
   }
   .footer > .container > #footer > #payment {
     margin-top: 10px;
