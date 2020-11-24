@@ -13,16 +13,16 @@
   width: 100%;
   height: auto;
 }
-.navbar {
+.Navigation {
   background-color: rgb(85, 78, 78);
 }
-.navbar > .container > .nav-header > a {
+.Navigation > .container > .nav-header > a {
   margin: 2px 0;
 }
-.navbar > .container > .collapse > .nav {
+.Navigation > .container > #myNavbar > ul {
   width: 85%;
 }
-.navbar > .container > .collapse > .nav > li > a {
+.Navigation > .container > #myNavbar > ul > li > a {
   color: white;
   font-size: 15px;
   letter-spacing: 1px;
@@ -32,7 +32,7 @@
   padding: 7px 10px;
   margin-top: 10px;
 }
-.navbar > .container > .collapse > .nav > li > a:hover {
+.Navigation > .container > #myNavbar > ul > li > a:hover {
   background-color: rgb(41, 34, 34);
 }
 .container > #myCarousel {
@@ -70,7 +70,7 @@ ul li:hover ul.dropdown {
 ul li ul.dropdown li {
   display: block;
 }
-.navbar > .container > .collapse > .notification {
+.Navigation > .container > #myNavbar > .notification {
   color: white;
   text-decoration: none;
   padding: 10px 10px;
@@ -79,18 +79,18 @@ ul li ul.dropdown li {
   display: inline-block;
   background-color: transparent;
 }
-.navbar > .container > .collapse > .notification > i {
+.Navigation > .container > #myNavbar > .notification > i {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: x-large;
 }
-.navbar > .container > .collapse > .notification:hover,
+.Navigation > .container > #myNavbar > .notification:hover,
 :focus,
 :active {
   color: white;
 }
-.navbar > .container > .collapse > .notification .badge {
+.Navigation > .container > #myNavbar > .notification .badge {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -408,7 +408,7 @@ ul li ul.dropdown li {
   border-bottom: 3px solid rgb(43, 42, 42);
 }
 .main > .Product > #Details {
-  padding: 40px 0px;
+  padding: 20px 0px;
   font-family: Open Sans;
 }
 
@@ -430,7 +430,7 @@ ul li ul.dropdown li {
   margin-right: 5px;
 }
 .main > .Product > #Review {
-  padding: 40px 0px;
+  padding: 20px 0px;
 }
 .main > .Product > #Review > h4 {
   font-size: 18px;
@@ -501,9 +501,9 @@ ul li ul.dropdown li {
 :active {
   outline: none;
 }
-
 table {
-  margin: 50px 0px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   border-collapse: collapse;
   border-spacing: 0;
   width: 80%;
@@ -892,7 +892,7 @@ td {
 }
 /* Tablet Landscape */
 @media screen and (max-width: 1199px) {
-  .navbar > .container > .collapse > .nav > li > a {
+  .Navigation > .container > #myNavbar > ul > li > a {
     color: white;
     font-size: 10px;
     letter-spacing: 1px;
@@ -918,21 +918,23 @@ td {
     padding: 0px;
     border-left: none;
   }
+  .main > .Product > #Custom-tab > table {
+    width: 100%;
+  }
+  .footer > .container > .footer-body > .featured-product > h5 {
+    margin-top: 10px;
+  }
+  .footer > .container > .footer-body > .Follow {
+    margin-top: -100px;
+  }
   .footer > .container > #footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
   }
   .footer > .container > #footer > #payment {
     margin: 10px 0px;
-  }
-  .footer > .container > #footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
   }
 }
 /* Tablet Portrait */
@@ -988,6 +990,7 @@ td {
     align-items: flex-start;
     justify-content: center;
     padding-left: 0px;
+    margin-top: 59px;
   }
   .footer > .container > .footer-body > .Follow {
     display: flex;
@@ -1053,7 +1056,27 @@ td {
 }
 /* Mobile Landscape */
 @media screen and (max-width: 767px) {
-  .navbar > .container > .collapse > .notification {
+  .Navigation > .container > #myNavbar > ul {
+    width: 109%;
+  }
+  .Navigation > .container > #myNavbar > ul > li > a {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Secular One;
+    text-transform: uppercase;
+    margin: 6px 5px;
+    padding: 7px 10px;
+    margin-top: 10px;
+  }
+  ul > li > ul > li > a {
+    color: rgb(41, 34, 34);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .Navigation > .container > #myNavbar > .notification {
     display: none;
   }
   .Product {
@@ -1092,6 +1115,22 @@ td {
   .main > .Product > .product-details > .ourService {
     display: none;
   }
+  .main > .Product > .tabs {
+    padding-top: 20px;
+  }
+  .main > .Product > .tabs > button {
+    padding-bottom: 5px;
+  }
+  .main > .Product > #Details {
+    padding: 15px 0px;
+  }
+  .main > .Product > #Details > ul {
+    margin: 0px;
+    line-height: 24px;
+  }
+  .main > .Product > #Review {
+    padding-top: 20px;
+  }
   table {
     width: 100%;
   }
@@ -1123,6 +1162,7 @@ td {
     justify-content: center;
     padding-left: 0px;
     padding-bottom: 20px;
+    margin-top: 10px;
     width: 100%;
   }
   .footer > .container > .footer-body > .Follow {
@@ -1189,6 +1229,9 @@ td {
 }
 /* Mobile Portrait*/
 @media screen and (max-width: 480px) {
+  .Navigation > .container > #myNavbar > ul {
+    text-align: center;
+  }
   .main > .Product > .product-details {
     display: flex;
     flex-direction: column;
@@ -1239,6 +1282,9 @@ td {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .main > .Product > .tabs > button {
+    width: 90%;
+  }
   .main > .Product > .tabs > .product_details {
     padding: 10px 10px;
   }
@@ -1259,13 +1305,7 @@ td {
     align-items: flex-start;
     width: 100%;
   }
-  .footer > .container > #footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    width: 100%;
-  }
+
   .footer > .container > .footer-body > .body > .contact > div {
     display: flex;
     flex-direction: column;
@@ -1323,7 +1363,7 @@ td {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   .footer > .container > #footer > .subscribe {
     display: flex;
