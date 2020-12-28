@@ -160,11 +160,9 @@
               <form>
                 <label for="product">Sort By </label>
                 <select name="product" id="product">
-                  <option id="value" value="sorting">Product Name</option>
-                  <option id="value" value="sorting">Price</option>
-                  <option id="value" value="sorting" selected="selected">
-                    Relevance
-                  </option>
+                  <option>Product Name</option>
+                  <option>Price</option>
+                  <option selected="selected">Relevance</option>
                 </select>
                 <a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
               </form>
@@ -172,10 +170,10 @@
             <div class="size">
               <form>
                 <label for="product">Show </label>
-                <select name="product" id="product">
-                  <option value="sorting" selected="selected">12</option>
-                  <option value="sorting">24</option>
-                  <option value="sorting">32</option>
+                <select name="product" id="product2">
+                  <option selected="selected">12</option>
+                  <option>24</option>
+                  <option>32</option>
                 </select>
                 <a href="#" onclick="ReplaceGrid()"
                   ><i class="fas fa-th"></i
@@ -208,7 +206,7 @@
               <button class="btn cart01">
                 <i class="far fa-heart"></i>
               </button>
-              <button id="btn" class="btn">
+              <button class="btn cart-button">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
@@ -239,7 +237,7 @@
               <button class="btn cart02">
                 <i class="far fa-heart"></i>
               </button>
-              <button id="btn" class="btn">
+              <button class="btn cart-button">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
@@ -270,7 +268,7 @@
               <button class="btn cart03">
                 <i class="far fa-heart"></i>
               </button>
-              <button id="btn" class="btn">
+              <button class="btn cart-button">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
@@ -301,7 +299,7 @@
               <button class="btn cart04">
                 <i class="far fa-heart"></i>
               </button>
-              <button id="btn" class="btn">
+              <button class="btn cart-button">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
@@ -332,7 +330,7 @@
               <button class="btn cart05">
                 <i class="far fa-heart"></i>
               </button>
-              <button id="btn" class="btn">
+              <button class="btn cart-button">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
@@ -363,7 +361,7 @@
               <button class="btn cart06">
                 <i class="far fa-heart"></i>
               </button>
-              <button id="btn" class="btn">
+              <button class="btn cart-button">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
@@ -394,7 +392,7 @@
               <button class="btn cart07">
                 <i class="far fa-heart"></i>
               </button>
-              <button id="btn" class="btn">
+              <button class="btn cart-button">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
@@ -425,7 +423,7 @@
               <button class="btn cart08">
                 <i class="far fa-heart"></i>
               </button>
-              <button id="btn" class="btn">
+              <button class="btn cart-button">
                 <i class="fa fa-shopping-bag" style="font-size: small"></i>Add
                 to Cart
               </button>
@@ -468,12 +466,7 @@
             <div class="featured-product">
               <h5>Featured Products</h5>
               <div class="product1">
-                <img
-                  src="./Images/product-01.jpg"
-                  width="95"
-                  height="auto"
-                  alt="product"
-                />
+                <img src="./Images/product-01.jpg" width="95" alt="product" />
                 <p>
                   <a href="#">Women Black Top</a>
                   <span class="rating">
@@ -487,12 +480,7 @@
                 </p>
               </div>
               <div class="product2">
-                <img
-                  src="./Images/product-02.jpg"
-                  width="95"
-                  height="auto"
-                  alt="product"
-                />
+                <img src="./Images/product-02.jpg" width="95" alt="product" />
                 <p>
                   <a href="#">Women Black Top</a>
                   <span class="rating">
@@ -575,10 +563,6 @@
 
     <!--External JavaScript-->
     <script src="./JavaScript/productList.js"></script>
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
+    <script async src="https://platform.twitter.com/widgets.js"></script>
   </body>
 </html>

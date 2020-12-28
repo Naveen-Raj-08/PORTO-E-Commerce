@@ -318,15 +318,15 @@ ul li ul.dropdown li {
   border-radius: 0px;
   width: 40px;
 }
-.main-content > .product_list > #item-1 > .group-btn > #btn > i {
+.main-content > .product_list > #item-1 > .group-btn > .cart-button > i {
   display: none;
   color: whitesmoke;
   margin-right: 5px;
 }
-.main-content > .product_list > #item-1:hover > .group-btn > #btn > i {
+.main-content > .product_list > #item-1:hover > .group-btn > .cart-button > i {
   display: inline-block;
 }
-.main-content > .product_list > #item-1:hover > .group-btn > #btn {
+.main-content > .product_list > #item-1:hover > .group-btn > .cart-button {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
@@ -337,15 +337,15 @@ ul li ul.dropdown li {
   border-radius: 0px;
   width: 40px;
 }
-.main-content > .product_list > #item-2 > .group-btn > #btn > i {
+.main-content > .product_list > #item-2 > .group-btn > .cart-button > i {
   display: none;
   color: whitesmoke;
   margin-right: 5px;
 }
-.main-content > .product_list > #item-2:hover > .group-btn > #btn > i {
+.main-content > .product_list > #item-2:hover > .group-btn > .cart-button > i {
   display: inline-block;
 }
-.main-content > .product_list > #item-2:hover > .group-btn > #btn {
+.main-content > .product_list > #item-2:hover > .group-btn > .cart-button {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
@@ -356,15 +356,15 @@ ul li ul.dropdown li {
   border-radius: 0px;
   width: 40px;
 }
-.main-content > .product_list > #item-3 > .group-btn > #btn > i {
+.main-content > .product_list > #item-3 > .group-btn > .cart-button > i {
   display: none;
   color: whitesmoke;
   margin-right: 5px;
 }
-.main-content > .product_list > #item-3:hover > .group-btn > #btn > i {
+.main-content > .product_list > #item-3:hover > .group-btn > .cart-button > i {
   display: inline-block;
 }
-.main-content > .product_list > #item-3:hover > .group-btn > #btn {
+.main-content > .product_list > #item-3:hover > .group-btn > .cart-button {
   background-color: rgb(49, 49, 49);
   border-radius: 0px;
   color: whitesmoke;
@@ -376,16 +376,16 @@ ul li ul.dropdown li {
   border-radius: 0px;
   width: 40px;
 }
-.main-content > .product_list > #item-4 > .group-btn > #btn > i {
+.main-content > .product_list > #item-4 > .group-btn > .cart-button > i {
   display: none;
   color: whitesmoke;
   margin-right: 5px;
 }
-.main-content > .product_list > #item-4:hover > .group-btn > #btn > i {
+.main-content > .product_list > #item-4:hover > .group-btn > .cart-button > i {
   display: inline-block;
 }
 
-.main-content > .product_list > #item-4:hover > .group-btn > #btn {
+.main-content > .product_list > #item-4:hover > .group-btn > .cart-button {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
@@ -396,17 +396,17 @@ ul li ul.dropdown li {
   border-radius: 0px;
   width: 40px;
 }
-.main-content > .product_list > #item-5 > .group-btn > #btn > i {
+.main-content > .product_list > #item-5 > .group-btn > .cart-button > i {
   display: none;
   color: whitesmoke;
   margin-right: 5px;
 }
 
-.main-content > .product_list > #item-5:hover > .group-btn > #btn > i {
+.main-content > .product_list > #item-5:hover > .group-btn > .cart-button > i {
   display: inline-block;
 }
 
-.main-content > .product_list > #item-5:hover > .group-btn > #btn {
+.main-content > .product_list > #item-5:hover > .group-btn > .cart-button {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
@@ -417,17 +417,17 @@ ul li ul.dropdown li {
   border-radius: 0px;
   width: 40px;
 }
-.main-content > .product_list > #item-6 > .group-btn > #btn > i {
+.main-content > .product_list > #item-6 > .group-btn > .cart-button > i {
   display: none;
   color: whitesmoke;
   margin-right: 5px;
 }
 
-.main-content > .product_list > #item-6:hover > .group-btn > #btn > i {
+.main-content > .product_list > #item-6:hover > .group-btn > .cart-button > i {
   display: inline-block;
 }
 
-.main-content > .product_list > #item-6:hover > .group-btn > #btn {
+.main-content > .product_list > #item-6:hover > .group-btn > .cart-button {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
@@ -438,17 +438,17 @@ ul li ul.dropdown li {
   border-radius: 0px;
   width: 40px;
 }
-.main-content > .product_list > #item-7 > .group-btn > #btn > i {
+.main-content > .product_list > #item-7 > .group-btn > .cart-button > i {
   display: none;
   color: whitesmoke;
   margin-right: 5px;
 }
 
-.main-content > .product_list > #item-7:hover > .group-btn > #btn > i {
+.main-content > .product_list > #item-7:hover > .group-btn > .cart-button > i {
   display: inline-block;
 }
 
-.main-content > .product_list > #item-7:hover > .group-btn > #btn {
+.main-content > .product_list > #item-7:hover > .group-btn > .cart-button {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
@@ -459,15 +459,15 @@ ul li ul.dropdown li {
   border-radius: 0px;
   width: 40px;
 }
-.main-content > .product_list > #item-8 > .group-btn > #btn > i {
+.main-content > .product_list > #item-8 > .group-btn > .cart-button > i {
   display: none;
   color: whitesmoke;
   margin-right: 5px;
 }
-.main-content > .product_list > #item-8:hover > .group-btn > #btn > i {
+.main-content > .product_list > #item-8:hover > .group-btn > .cart-button > i {
   display: inline-block;
 }
-.main-content > .product_list > #item-8:hover > .group-btn > #btn {
+.main-content > .product_list > #item-8:hover > .group-btn > .cart-button {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
