@@ -283,7 +283,7 @@ ul li ul.dropdown li {
   color: rgb(49, 49, 49);
   margin: 5px 5px;
 }
-.main-content > .product_list > .card > p > #price {
+.main-content > .product_list > .card > p > .price {
   padding: 5px 10px;
   font-family: Oswald;
   font-size: 18px;
@@ -311,7 +311,7 @@ ul li ul.dropdown li {
   font-family: Oswald;
 }
 
-.main-content > .product_list > .card > .group-btn > #cart01 {
+.main-content > .product_list > .card > .group-btn > .cart01 {
   display: none;
   padding: 7px 5px;
   border: none;
@@ -330,7 +330,7 @@ ul li ul.dropdown li {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
-.main-content > .product_list > .card > .group-btn > #cart02 {
+.main-content > .product_list > .card > .group-btn > .cart02 {
   display: none;
   padding: 7px 5px;
   border: none;
@@ -349,7 +349,7 @@ ul li ul.dropdown li {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
-.main-content > .product_list > .card > .group-btn > #cart03 {
+.main-content > .product_list > .card > .group-btn > .cart03 {
   display: none;
   padding: 7px 5px;
   border: none;
@@ -369,7 +369,7 @@ ul li ul.dropdown li {
   border-radius: 0px;
   color: whitesmoke;
 }
-.main-content > .product_list > .card > .group-btn > #cart04 {
+.main-content > .product_list > .card > .group-btn > .cart04 {
   display: none;
   padding: 7px 5px;
   border: none;
@@ -389,7 +389,7 @@ ul li ul.dropdown li {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
-.main-content > .product_list > .card > .group-btn > #cart05 {
+.main-content > .product_list > .card > .group-btn > .cart05 {
   display: none;
   padding: 7px 5px;
   border: none;
@@ -410,7 +410,7 @@ ul li ul.dropdown li {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
-.main-content > .product_list > .card > .group-btn > #cart06 {
+.main-content > .product_list > .card > .group-btn > .cart06 {
   display: none;
   padding: 7px 5px;
   border: none;
@@ -431,7 +431,7 @@ ul li ul.dropdown li {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
-.main-content > .product_list > .card > .group-btn > #cart07 {
+.main-content > .product_list > .card > .group-btn > .cart07 {
   display: none;
   padding: 7px 5px;
   border: none;
@@ -452,7 +452,7 @@ ul li ul.dropdown li {
   background-color: rgb(49, 49, 49);
   color: whitesmoke;
 }
-.main-content > .product_list > .card > .group-btn > #cart08 {
+.main-content > .product_list > .card > .group-btn > .cart08 {
   display: none;
   padding: 7px 5px;
   border: none;
