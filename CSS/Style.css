@@ -504,7 +504,7 @@ ul li ul.dropdown li {
   color: rgb(49, 49, 49);
   margin: 5px 5px;
 }
-.home > .main-content > .product_list > .card > p > #price {
+.home > .main-content > .product_list > .card > p > .price {
   padding: 5px 10px;
   font-family: oswald;
   font-size: 18px;
@@ -534,56 +534,56 @@ ul li ul.dropdown li {
   font-family: Oswald;
 }
 
-.home > .main-content > .product_list > .card > .group-btn > #cart01 {
+.home > .main-content > .product_list > .card > .group-btn > .cart01 {
   display: none;
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
   width: 40px;
 }
-.home > .main-content > .product_list > .card > .group-btn > #cart02 {
+.home > .main-content > .product_list > .card > .group-btn > .cart02 {
   display: none;
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
   width: 40px;
 }
-.home > .main-content > .product_list > .card > .group-btn > #cart03 {
+.home > .main-content > .product_list > .card > .group-btn > .cart03 {
   display: none;
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
   width: 40px;
 }
-.home > .main-content > .product_list > .card > .group-btn > #cart04 {
+.home > .main-content > .product_list > .card > .group-btn > .cart04 {
   display: none;
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
   width: 40px;
 }
-.home > .main-content > .product_list > .card > .group-btn > #cart05 {
+.home > .main-content > .product_list > .card > .group-btn > .cart05 {
   display: none;
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
   width: 40px;
 }
-.home > .main-content > .product_list > .card > .group-btn > #cart06 {
+.home > .main-content > .product_list > .card > .group-btn > .cart06 {
   display: none;
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
   width: 40px;
 }
-.home > .main-content > .product_list > .card > .group-btn > #cart07 {
+.home > .main-content > .product_list > .card > .group-btn > .cart07 {
   display: none;
   padding: 7px 5px;
   border: none;
   border-radius: 0px;
   width: 40px;
 }
-.home > .main-content > .product_list > .card > .group-btn > #cart08 {
+.home > .main-content > .product_list > .card > .group-btn > .cart08 {
   display: none;
   padding: 7px 5px;
   border: none;
