@@ -226,7 +226,7 @@ ul li ul.dropdown li {
   align-items: flex-start;
   text-align: left;
 }
-.main-content > div > .product-list > #item-1 {
+.main-content > div > .product-list > .item-1 {
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -234,11 +234,11 @@ ul li ul.dropdown li {
   padding: 10px 5px;
   margin: 0px;
 }
-.main-content > div > .product-list > #item-1 > img {
+.main-content > div > .product-list > .item-1 > img {
   width: 100%;
   height: auto;
 }
-.main-content > div > .product-list > #item-1 > .product-details {
+.main-content > div > .product-list > .item-1 > .product-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,36 +247,36 @@ ul li ul.dropdown li {
   padding: 0px 20px;
   font-family: Poppins;
 }
-.main-content > div > .product-list > #item-1 > .product-details > a {
+.main-content > div > .product-list > .item-1 > .product-details > a {
   color: rgb(49, 49, 49);
   font-size: 15px;
 }
-.main-content > div > .product-list > #item-1 > .product-details > a:hover,
+.main-content > div > .product-list > .item-1 > .product-details > a:hover,
 :active,
 :focus {
   text-decoration: none;
 }
-.main-content > div > .product-list > #item-1 > .product-details > .rating > i {
+.main-content > div > .product-list > .item-1 > .product-details > .rating > i {
   color: rgb(199, 199, 199);
 }
-.main-content > div > .product-list > #item-1 > .product-details > #price {
+.main-content > div > .product-list > .item-1 > .product-details > .price {
   font-family: Oswald;
   font-size: 18px;
   padding-bottom: 20px;
   color: rgb(77, 70, 70);
 }
-.main-content > div > .product-list > #item-1 > .product-details > p {
+.main-content > div > .product-list > .item-1 > .product-details > p {
   font-size: 13px;
   font-family: Open Sans;
   color: rgb(117, 117, 117);
 }
-.main-content > div > .product-list > #item-1 > .product-details > .group-btn {
+.main-content > div > .product-list > .item-1 > .product-details > .group-btn {
   font-family: Oswald;
 }
 .main-content
   > div
   > .product-list
-  > #item-1
+  > .item-1
   > .product-details
   > .group-btn
   > #btn {
@@ -292,7 +292,7 @@ ul li ul.dropdown li {
 .main-content
   > div
   > .product-list
-  > #item-1
+  > .item-1
   > .product-details
   > .group-btn
   > #btn:focus,
@@ -302,7 +302,7 @@ ul li ul.dropdown li {
 .main-content
   > div
   > .product-list
-  > #item-1
+  > .item-1
   > .product-details
   > .group-btn
   > #btn
@@ -313,10 +313,10 @@ ul li ul.dropdown li {
 .main-content
   > div
   > .product-list
-  > #item-1
+  > .item-1
   > .product-details
   > .group-btn
-  > #like {
+  > .like {
   font-size: 15px;
   padding: 7px 8px;
   border-radius: 0px;
@@ -327,20 +327,20 @@ ul li ul.dropdown li {
 .main-content
   > div
   > .product-list
-  > #item-1
+  > .item-1
   > .product-details
   > .group-btn
-  > #like:focus,
+  > .like:focus,
 :active {
   outline: none;
 }
 .main-content
   > div
   > .product-list
-  > #item-1
+  > .item-1
   > .product-details
   > .group-btn
-  > #like
+  > .like
   > i {
   color: rgb(59, 53, 53);
 }
@@ -965,15 +965,15 @@ ul li ul.dropdown li {
   .main-content > div > .heading {
     padding: 0px 10px;
   }
-  .main-content > div > .product-list > #item-1 {
+  .main-content > div > .product-list > .item-1 {
     padding: 10px 10px;
   }
-  .main-content > div > .product-list > #item-1 > img {
+  .main-content > div > .product-list > .item-1 > img {
     width: 100%;
     height: auto;
     padding-right: 10px;
   }
-  .main-content > div > .product-list > #item-1 > .product-details {
+  .main-content > div > .product-list > .item-1 > .product-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -984,7 +984,7 @@ ul li ul.dropdown li {
   .main-content
     > div
     > .product-list
-    > #item-1
+    > .item-1
     > .product-details
     > .group-btn
     > #btn {
@@ -993,10 +993,10 @@ ul li ul.dropdown li {
   .main-content
     > div
     > .product-list
-    > #item-1
+    > .item-1
     > .product-details
     > .group-btn
-    > #like {
+    > .like {
     text-align: center;
   }
 
