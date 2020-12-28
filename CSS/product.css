@@ -458,7 +458,7 @@ ul li ul.dropdown li {
 .main > .Product > #Review > form {
   padding-top: 10px;
 }
-.main > .Product > #Review > form > #label {
+.main > .Product > #Review > form > .label {
   color: #3b3939;
   letter-spacing: 1px;
   font-size: 13px;
@@ -509,14 +509,14 @@ table {
   border-spacing: 0;
   width: 80%;
 }
-tr > th {
+tr > .th {
   color: #7c7c7c;
   padding: 10px 10px;
   font-size: 15px;
   font-family: Oxygen;
   font-weight: 600;
 }
-td {
+.td {
   text-align: left;
   padding: 15px 10px;
   color: #bbbbbb;
